@@ -1,0 +1,75 @@
+Analyzing customer_app...                                       
+
+   info - 'timeLimit' is deprecated and shouldn't be used. use settings parameter with AndroidSettings, AppleSettings, WebSettings, or LocationSettings - lib\core\location_service.dart:103:11 - deprecated_member_use
+   info - 'desiredAccuracy' is deprecated and shouldn't be used. use settings parameter with AndroidSettings, AppleSettings, WebSettings, or LocationSettings - lib\core\location_service.dart:111:11 - deprecated_member_use
+   info - 'timeLimit' is deprecated and shouldn't be used. use settings parameter with AndroidSettings, AppleSettings, WebSettings, or LocationSettings - lib\core\location_service.dart:112:11 - deprecated_member_use
+   info - Don't invoke 'print' in production code - lib\core\location_service.dart:251:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\location_service.dart:278:7 - avoid_print
+   info - Unnecessary braces in a string interpolation - lib\core\location_service.dart:287:66 - unnecessary_brace_in_string_interps
+   info - Use 'const' for final variables initialized to a constant value - lib\core\location_service.dart:320:7 - prefer_const_declarations
+   info - Don't invoke 'print' in production code - lib\core\location_service.dart:361:7 - avoid_print
+   info - Use 'const' with the constructor to improve performance - lib\core\pro_theme.dart:67:16 - prefer_const_constructors
+   info - Don't invoke 'print' in production code - lib\core\razorpay_service.dart:61:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\services\routing_service.dart:23:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\services\routing_service.dart:49:7 - avoid_print
+   info - Don't use 'BuildContext's across async gaps - lib\features\auth\login_screen.dart:66:28 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\features\auth\login_screen.dart:103:28 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\features\auth\login_screen.dart:126:28 - use_build_context_synchronously
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\login_screen.dart:250:30 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\login_screen.dart:251:28 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\login_screen.dart:268:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\auth\login_screen.dart:269:22 - prefer_const_constructors
+warning - The value of the field '_promoCode' isn't used - lib\features\cart\cart_screen.dart:25:10 - unused_field
+   info - Don't use 'BuildContext's across async gaps - lib\features\cart\cart_screen.dart:149:30 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\features\cart\cart_screen.dart:160:28 - use_build_context_synchronously
+   info - Use 'const' for final variables initialized to a constant value - lib\features\cart\cart_screen.dart:180:5 - prefer_const_declarations
+   info - Use 'const' for final variables initialized to a constant value - lib\features\cart\cart_screen.dart:182:5 - prefer_const_declarations
+warning - Dead code - lib\features\cart\cart_screen.dart:202:14 - dead_code
+   info - The 'if' statement could be replaced by a null-aware assignment - lib\features\cart\cart_screen.dart:596:25 - prefer_conditional_assignment
+   info - The local variable '_selectedLabelType' starts with an underscore - lib\features\cart\cart_screen.dart:1237:12 - no_leading_underscores_for_local_identifiers
+   info - Statements in an if should be enclosed in a block - lib\features\cart\cart_screen.dart:1289:37 - curly_braces_in_flow_control_structures
+   info - Don't use 'BuildContext's across async gaps - lib\features\cart\cart_screen.dart:1446:58 - use_build_context_synchronously
+   info - Statements in an if should be enclosed in a block - lib\features\home\home_screen.dart:94:19 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\home\home_screen.dart:446:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\home\home_screen.dart:514:7 - curly_braces_in_flow_control_structures
+   info - The declaration '_showLocationPicker' isn't referenced - lib\features\home\home_screen.dart:560:8 - unused_element
+   info - Use 'const' with the constructor to improve performance - lib\features\home\home_screen.dart:684:39 - prefer_const_constructors
+   info - Statements in an if should be enclosed in a block - lib\features\home\home_screen.dart:710:25 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\home\home_screen.dart:889:31 - curly_braces_in_flow_control_structures
+   info - Use 'const' with the constructor to improve performance - lib\features\home\home_screen.dart:1136:32 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\home\home_screen.dart:1137:37 - prefer_const_literals_to_create_immutables
+   info - Unnecessary use of 'toList' in a spread - lib\features\menu\menu_screen.dart:292:32 - unnecessary_to_list_in_spreads
+   info - The import of 'package:flutter/services.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart' - lib\features\orders\order_details_screen.dart:8:8 - unnecessary_import
+warning - The value of the field '_googleMapController' isn't used - lib\features\orders\order_details_screen.dart:29:30 - unused_field
+   info - Statements in an if should be enclosed in a block - lib\features\orders\order_details_screen.dart:104:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\orders\order_details_screen.dart:131:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\orders\order_details_screen.dart:196:7 - curly_braces_in_flow_control_structures
+   info - 'fromBytes' is deprecated and shouldn't be used. Use BitmapDescriptor.bytes method instead - lib\features\orders\order_details_screen.dart:197:34 - deprecated_member_use
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\order_details_screen.dart:505:13 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\orders\order_details_screen.dart:506:25 - prefer_const_literals_to_create_immutables
+   info - Statements in an if should be enclosed in a block - lib\features\orders\order_details_screen.dart:596:21 - curly_braces_in_flow_control_structures
+   info - The imported package 'intl' isn't a dependency of the importing package - lib\features\orders\orders_screen.dart:2:8 - depend_on_referenced_packages
+warning - Unused import: '../../core/cart_state.dart' - lib\features\orders\orders_screen.dart:8:8 - unused_import
+   info - The private field _activeFilter could be 'final' - lib\features\orders\orders_screen.dart:20:10 - prefer_final_fields
+warning - The value of the field '_activeFilter' isn't used - lib\features\orders\orders_screen.dart:20:10 - unused_field
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\orders_screen.dart:100:26 - prefer_const_constructors
+   info - Statements in an if should be enclosed in a block - lib\features\orders\orders_screen.dart:108:13 - curly_braces_in_flow_control_structures
+warning - The value of the local variable 'statusTextColor' isn't used - lib\features\orders\orders_screen.dart:210:11 - unused_local_variable
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\favorites_screen.dart:139:41 - prefer_const_constructors
+   info - Don't use 'BuildContext's across async gaps - lib\features\profile\legal_consent_screen.dart:103:28 - use_build_context_synchronously
+   info - Statements in an if should be enclosed in a block - lib\features\profile\legal_consent_screen.dart:111:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\profile\legal_consent_screen.dart:116:7 - curly_braces_in_flow_control_structures
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\legal_screen.dart:91:15 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\legal_screen.dart:134:24 - prefer_const_constructors
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\profile\profile_pages.dart:359:36 - use_build_context_synchronously
+   info - Statements in an if should be enclosed in a block - lib\features\profile\profile_screen.dart:31:7 - curly_braces_in_flow_control_structures
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_screen.dart:119:31 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_screen.dart:188:27 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_screen.dart:189:27 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\profile\profile_screen.dart:190:27 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_screen.dart:313:32 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\profile\profile_screen.dart:315:37 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_screen.dart:319:29 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_screen.dart:321:38 - prefer_const_constructors
+   info - The declaration '_checkSession' isn't referenced - lib\main.dart:105:16 - unused_element
+

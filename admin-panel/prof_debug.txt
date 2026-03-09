@@ -1,0 +1,8 @@
+{
+  "id": "rrgtG3C1UHgIcBMMtfdSnF2Vxup2",
+  "full_name": "",
+  "phone": "8897868951",
+  "avatar_url": null,
+  "created_at": "2026-03-02T18:12:04.930812+00:00",
+  "updated_at": "2026-03-06T18:40:55.07377+00:00"
+}

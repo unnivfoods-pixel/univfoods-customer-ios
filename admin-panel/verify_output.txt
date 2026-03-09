@@ -1,0 +1,6 @@
+>>> Final Verification of Essential Tables...
+[OK] faqs EXISTS
+[OK] legal_documents EXISTS
+[OK] app_settings EXISTS
+[OK] registration_requests EXISTS
+[OK] support_tickets EXISTS

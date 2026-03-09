@@ -1,0 +1,62 @@
+Analyzing customer_app...                                       
+
+   info - 'timeLimit' is deprecated and shouldn't be used. use settings parameter with AndroidSettings, AppleSettings, WebSettings, or LocationSettings - lib\core\location_service.dart:103:11 - deprecated_member_use
+   info - 'desiredAccuracy' is deprecated and shouldn't be used. use settings parameter with AndroidSettings, AppleSettings, WebSettings, or LocationSettings - lib\core\location_service.dart:111:11 - deprecated_member_use
+   info - 'timeLimit' is deprecated and shouldn't be used. use settings parameter with AndroidSettings, AppleSettings, WebSettings, or LocationSettings - lib\core\location_service.dart:112:11 - deprecated_member_use
+   info - Don't invoke 'print' in production code - lib\core\location_service.dart:251:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\location_service.dart:278:7 - avoid_print
+   info - Unnecessary braces in a string interpolation - lib\core\location_service.dart:287:66 - unnecessary_brace_in_string_interps
+   info - Use 'const' for final variables initialized to a constant value - lib\core\location_service.dart:320:7 - prefer_const_declarations
+   info - Don't invoke 'print' in production code - lib\core\location_service.dart:361:7 - avoid_print
+   info - Use 'const' with the constructor to improve performance - lib\core\pro_theme.dart:67:16 - prefer_const_constructors
+   info - Don't invoke 'print' in production code - lib\core\razorpay_service.dart:61:7 - avoid_print
+   info - The import of 'package:flutter/foundation.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart' - lib\core\services\notification_service.dart:3:8 - unnecessary_import
+   info - Use 'const' with the constructor to improve performance - lib\core\services\notification_service.dart:35:11 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\core\services\notification_service.dart:71:9 - prefer_const_constructors
+   info - Don't invoke 'print' in production code - lib\core\services\routing_service.dart:23:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\services\routing_service.dart:49:7 - avoid_print
+warning - Unused import: '../../core/pro_theme.dart' - lib\features\cart\cart_screen.dart:6:8 - unused_import
+warning - Unused import: '../../core/location_service.dart' - lib\features\cart\cart_screen.dart:11:8 - unused_import
+warning - The value of the field '_paymentMethod' isn't used - lib\features\cart\cart_screen.dart:23:10 - unused_field
+warning - The value of the field '_selectedUpiApp' isn't used - lib\features\cart\cart_screen.dart:24:10 - unused_field
+   info - The private field _tipAmount could be 'final' - lib\features\cart\cart_screen.dart:27:10 - prefer_final_fields
+   info - Use 'const' for final variables initialized to a constant value - lib\features\cart\cart_screen.dart:147:5 - prefer_const_declarations
+   info - Use 'const' for final variables initialized to a constant value - lib\features\cart\cart_screen.dart:148:5 - prefer_const_declarations
+   info - The declaration '_showAddAddressForm' isn't referenced - lib\features\cart\cart_screen.dart:981:8 - unused_element
+   info - Statements in an if should be enclosed in a block - lib\features\home\home_screen.dart:91:19 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\home\home_screen.dart:224:7 - curly_braces_in_flow_control_structures
+   info - The declaration '_determinePosition' isn't referenced - lib\features\home\home_screen.dart:244:16 - unused_element
+   info - Don't use 'BuildContext's across async gaps - lib\features\home\home_screen.dart:294:28 - use_build_context_synchronously
+   info - The declaration '_StickySearchBarDelegate' isn't referenced - lib\features\home\home_screen.dart:885:7 - unused_element
+warning - The value of the field '_isFavorite' isn't used - lib\features\menu\menu_screen.dart:20:8 - unused_field
+warning - The value of the field '_favoriteId' isn't used - lib\features\menu\menu_screen.dart:21:11 - unused_field
+   info - Statements in an if should be enclosed in a block - lib\features\menu\menu_screen.dart:250:27 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\orders\order_details_screen.dart:104:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\orders\order_details_screen.dart:131:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\orders\order_details_screen.dart:196:7 - curly_braces_in_flow_control_structures
+   info - 'fromBytes' is deprecated and shouldn't be used. Use BitmapDescriptor.bytes method instead - lib\features\orders\order_details_screen.dart:197:34 - deprecated_member_use
+   info - The declaration '_showInstructionModal' isn't referenced - lib\features\orders\order_details_screen.dart:273:8 - unused_element
+   info - The declaration '_buildSafetyBanner' isn't referenced - lib\features\orders\order_details_screen.dart:823:10 - unused_element
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\order_details_screen.dart:880:17 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\orders\order_details_screen.dart:882:29 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\order_details_screen.dart:975:32 - prefer_const_constructors
+   info - The declaration '_showRatingDialog' isn't referenced - lib\features\orders\order_details_screen.dart:1104:8 - unused_element
+   info - The imported package 'intl' isn't a dependency of the importing package - lib\features\orders\orders_screen.dart:2:8 - depend_on_referenced_packages
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\orders_screen.dart:100:26 - prefer_const_constructors
+   info - Statements in an if should be enclosed in a block - lib\features\orders\orders_screen.dart:108:13 - curly_braces_in_flow_control_structures
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\orders_screen.dart:398:25 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\orders_screen.dart:399:36 - prefer_const_constructors
+   info - Don't use 'BuildContext's across async gaps - lib\features\profile\legal_consent_screen.dart:103:28 - use_build_context_synchronously
+   info - Statements in an if should be enclosed in a block - lib\features\profile\legal_consent_screen.dart:111:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\profile\legal_consent_screen.dart:116:7 - curly_braces_in_flow_control_structures
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\legal_screen.dart:91:15 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\legal_screen.dart:134:24 - prefer_const_constructors
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\profile\profile_pages.dart:355:36 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\features\profile\profile_pages.dart:823:44 - use_build_context_synchronously
+   info - Statements in an if should be enclosed in a block - lib\features\profile\profile_pages.dart:1072:11 - curly_braces_in_flow_control_structures
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:1108:25 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\profile\profile_pages.dart:1109:37 - prefer_const_literals_to_create_immutables
+warning - The value of the field '_promos' isn't used - lib\features\profile\profile_pages.dart:1198:8 - unused_field
+   info - The declaration '_showLanguagePicker' isn't referenced - lib\features\profile\profile_pages.dart:1353:8 - unused_element
+   info - The declaration '_checkSession' isn't referenced - lib\main.dart:124:16 - unused_element
+

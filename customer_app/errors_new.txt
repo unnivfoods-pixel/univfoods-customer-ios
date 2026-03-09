@@ -1,0 +1,63 @@
+Analyzing customer_app...                                       
+
+   info - Unnecessary braces in a string interpolation - lib\core\location_service.dart:257:66 - unnecessary_brace_in_string_interps
+   info - Use 'const' for final variables initialized to a constant value - lib\core\location_service.dart:290:7 - prefer_const_declarations
+   info - Use 'const' with the constructor to improve performance - lib\core\pro_theme.dart:67:16 - prefer_const_constructors
+   info - Don't invoke 'print' in production code - lib\core\razorpay_service.dart:27:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\razorpay_service.dart:66:7 - avoid_print
+   info - The import of 'package:flutter/foundation.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart' - lib\core\services\notification_service.dart:3:8 - unnecessary_import
+   info - Use 'const' with the constructor to improve performance - lib\core\services\notification_service.dart:35:11 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\core\services\notification_service.dart:71:9 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\core\services\notification_service.dart:121:9 - prefer_const_constructors
+   info - Don't invoke 'print' in production code - lib\core\services\routing_service.dart:23:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\services\routing_service.dart:49:7 - avoid_print
+   info - Don't use 'BuildContext's across async gaps - lib\features\cart\cart_screen.dart:219:30 - use_build_context_synchronously
+   info - Statements in an if should be enclosed in a block - lib\features\cart\cart_screen.dart:257:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\cart\cart_screen.dart:914:9 - curly_braces_in_flow_control_structures
+warning - The '!' will have no effect because the receiver can't be null - lib\features\cart\cart_screen.dart:961:43 - unnecessary_non_null_assertion
+   info - Statements in an if should be enclosed in a block - lib\features\cart\cart_screen.dart:974:19 - curly_braces_in_flow_control_structures
+   info - The import of 'package:flutter/foundation.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart' - lib\features\home\home_screen.dart:7:8 - unnecessary_import
+   info - The declaration '_logout' isn't referenced - lib\features\home\home_screen.dart:32:16 - unused_element
+   info - Don't use 'BuildContext's across async gaps - lib\features\home\home_screen.dart:38:20 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\features\home\home_screen.dart:41:20 - use_build_context_synchronously
+   info - The declaration '_absoluteNavigate' isn't referenced - lib\features\home\home_screen.dart:45:8 - unused_element
+   info - The declaration '_panicNavigate' isn't referenced - lib\features\home\home_screen.dart:122:8 - unused_element
+   info - Use 'const' with the constructor to improve performance - lib\features\home\home_screen.dart:539:68 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\home\home_screen.dart:601:68 - prefer_const_constructors
+   info - Unnecessary use of 'toList' in a spread - lib\features\home\home_screen.dart:743:66 - unnecessary_to_list_in_spreads
+   info - Use 'const' with the constructor to improve performance - lib\features\home\home_screen.dart:801:60 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\home\home_screen.dart:802:28 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\home\home_screen.dart:803:31 - prefer_const_literals_to_create_immutables
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\home\home_screen.dart:836:44 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\home\home_screen.dart:837:37 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\home\home_screen.dart:843:44 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\home\home_screen.dart:852:42 - use_build_context_synchronously
+   info - Use 'const' with the constructor to improve performance - lib\features\home\home_screen.dart:1716:21 - prefer_const_constructors
+warning - Unused import: 'package:supabase_flutter/supabase_flutter.dart' - lib\features\home\map_screen.dart:5:8 - unused_import
+warning - The value of the field '_loading' isn't used - lib\features\home\map_screen.dart:22:8 - unused_field
+   info - Use 'const' with the constructor to improve performance - lib\features\home\map_screen.dart:177:34 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\home\map_screen.dart:178:36 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\home\map_screen.dart:180:38 - prefer_const_constructors
+   info - Unnecessary use of 'toList' in a spread - lib\features\home\map_screen.dart:186:22 - unnecessary_to_list_in_spreads
+   info - Use 'const' with the constructor to improve performance - lib\features\home\map_screen.dart:288:11 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\home\map_screen.dart:289:23 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\features\home\map_screen.dart:290:15 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\home\map_screen.dart:291:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\home\map_screen.dart:294:15 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\home\map_screen.dart:295:24 - prefer_const_constructors
+warning - The '!' will have no effect because the receiver can't be null - lib\features\orders\orders_screen.dart:56:42 - unnecessary_non_null_assertion
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\orders_screen.dart:75:33 - prefer_const_constructors
+   info - Don't use 'BuildContext's across async gaps - lib\features\orders\orders_screen.dart:212:38 - use_build_context_synchronously
+warning - Unused import: 'package:supabase_flutter/supabase_flutter.dart' - lib\features\profile\legal_consent_screen.dart:6:8 - unused_import
+   info - Don't use 'BuildContext's across async gaps - lib\features\profile\legal_consent_screen.dart:110:28 - use_build_context_synchronously
+   info - Statements in an if should be enclosed in a block - lib\features\profile\legal_consent_screen.dart:141:7 - curly_braces_in_flow_control_structures
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\legal_screen.dart:91:15 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\legal_screen.dart:134:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\legal_screen.dart:149:31 - prefer_const_constructors
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\profile\profile_pages.dart:856:44 - use_build_context_synchronously
+warning - The '!' will have no effect because the receiver can't be null - lib\features\profile\profile_pages.dart:899:66 - unnecessary_non_null_assertion
+   info - Use 'const' for final variables initialized to a constant value - lib\features\profile\profile_screen.dart:100:5 - prefer_const_declarations
+   info - Use 'const' for final variables initialized to a constant value - lib\features\profile\profile_screen.dart:101:5 - prefer_const_declarations
+warning - The left operand can't be null, so the right operand is never executed - lib\features\profile\profile_screen.dart:119:60 - dead_null_aware_expression
+   info - Unnecessary use of 'toList' in a spread - lib\features\support\support_tickets_screen.dart:62:66 - unnecessary_to_list_in_spreads
+

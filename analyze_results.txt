@@ -1,0 +1,36 @@
+Analyzing customer_app...                                       
+
+   info - Statements in a for should be enclosed in a block - customer_app\lib\core\order_store.dart:56:27 - curly_braces_in_flow_control_structures
+   info - Statements in a for should be enclosed in a block - customer_app\lib\core\order_store.dart:58:30 - curly_braces_in_flow_control_structures
+   info - The import of 'package:flutter/material.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/foundation.dart' - customer_app\lib\core\razorpay_service.dart:3:8 - unnecessary_import
+   info - Don't invoke 'print' in production code - customer_app\lib\core\razorpay_service.dart:75:7 - avoid_print
+   info - The import of 'package:flutter/foundation.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart' - customer_app\lib\core\services\notification_service.dart:3:8 - unnecessary_import
+   info - Use 'const' with the constructor to improve performance - customer_app\lib\core\services\notification_service.dart:56:11 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - customer_app\lib\core\services\notification_service.dart:212:9 - prefer_const_constructors
+   info - Don't invoke 'print' in production code - customer_app\lib\core\services\routing_service.dart:23:7 - avoid_print
+   info - Don't invoke 'print' in production code - customer_app\lib\core\services\routing_service.dart:49:7 - avoid_print
+   info - The import of 'package:flutter/foundation.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart' - customer_app\lib\core\supabase_config.dart:4:8 - unnecessary_import
+   info - Statements in an if should be enclosed in a block - customer_app\lib\core\supabase_config.dart:234:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - customer_app\lib\core\supabase_config.dart:410:7 - curly_braces_in_flow_control_structures
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - customer_app\lib\features\auth\splash_login_screen.dart:507:58 - use_build_context_synchronously
+   info - Statements in an if should be enclosed in a block - customer_app\lib\features\home\home_screen.dart:524:7 - curly_braces_in_flow_control_structures
+   info - The declaration '_iconBtn' isn't referenced - customer_app\lib\features\home\home_screen.dart:638:10 - unused_element
+   info - The declaration '_buildActionFeedback' isn't referenced - customer_app\lib\features\home\home_screen.dart:699:8 - unused_element
+   info - Statements in an if should be enclosed in a block - customer_app\lib\features\home\map_screen.dart:177:21 - curly_braces_in_flow_control_structures
+   info - Unnecessary use of 'toList' in a spread - customer_app\lib\features\home\map_screen.dart:205:20 - unnecessary_to_list_in_spreads
+   info - Statements in an if should be enclosed in a block - customer_app\lib\features\home\map_screen.dart:359:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - customer_app\lib\features\home\map_screen.dart:461:7 - curly_braces_in_flow_control_structures
+   info - The declaration '_showVendorDetails' isn't referenced - customer_app\lib\features\home\map_screen.dart:541:8 - unused_element
+warning - The value of the local variable 'isGuest' isn't used - customer_app\lib\features\orders\orders_screen.dart:28:16 - unused_local_variable
+   info - Don't use 'BuildContext's across async gaps - customer_app\lib\features\orders\orders_screen.dart:246:38 - use_build_context_synchronously
+warning - Unused import: 'package:supabase_flutter/supabase_flutter.dart' - customer_app\lib\features\profile\legal_consent_screen.dart:6:8 - unused_import
+   info - Don't use 'BuildContext's across async gaps - customer_app\lib\features\profile\legal_consent_screen.dart:110:28 - use_build_context_synchronously
+   info - Statements in an if should be enclosed in a block - customer_app\lib\features\profile\legal_consent_screen.dart:141:7 - curly_braces_in_flow_control_structures
+   info - Use 'const' with the constructor to improve performance - customer_app\lib\features\profile\legal_screen.dart:91:15 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - customer_app\lib\features\profile\legal_screen.dart:134:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - customer_app\lib\features\profile\legal_screen.dart:149:31 - prefer_const_constructors
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - customer_app\lib\features\profile\profile_pages.dart:778:20 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - customer_app\lib\features\profile\profile_pages.dart:782:30 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - customer_app\lib\features\profile\profile_pages.dart:1340:58 - use_build_context_synchronously
+   info - Unnecessary use of 'toList' in a spread - customer_app\lib\features\support\support_tickets_screen.dart:62:66 - unnecessary_to_list_in_spreads
+

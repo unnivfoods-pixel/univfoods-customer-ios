@@ -1,0 +1,227 @@
+/* 📱 ORDERS PAGE - FULLY RESPONSIVE FIX */
+
+/* ============================================ */
+/* 1. DESKTOP VIEW - TABLE */
+/* ============================================ */
+
+.orders-table-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.orders-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders-table-container th,
+.orders-table-container td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+/* ============================================ */
+/* 2. MOBILE VIEW - CARD LAYOUT */
+/* ============================================ */
+
+@media (max-width: 768px) {
+
+    /* Hide table header on mobile */
+    .orders-table-container thead {
+        display: none;
+    }
+
+    /* Make table rows look like cards */
+    .orders-table-container table,
+    .orders-table-container tbody {
+        display: block;
+        width: 100%;
+    }
+
+    .orders-table-container tr {
+        display: block;
+        background: white;
+        margin-bottom: 1rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        border: 1px solid #eee;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .orders-table-container td {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 0 !important;
+        border-bottom: 1px dashed #eee !important;
+        width: 100%;
+        text-align: right;
+    }
+
+    .orders-table-container td:last-child {
+        border-bottom: none !important;
+        padding-top: 1rem !important;
+        justify-content: flex-end;
+    }
+
+    /* Add labels before each cell */
+    .orders-table-container td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #666;
+        text-align: left;
+        flex: 1;
+    }
+
+    /* Specific labels for each column */
+    .orders-table-container td:nth-of-type(1)::before {
+        content: "Order ID";
+    }
+
+    .orders-table-container td:nth-of-type(2)::before {
+        content: "Time";
+    }
+
+    .orders-table-container td:nth-of-type(3)::before {
+        content: "Details";
+    }
+
+    .orders-table-container td:nth-of-type(4)::before {
+        content: "Payment";
+    }
+
+    .orders-table-container td:nth-of-type(5)::before {
+        content: "Status";
+    }
+
+    .orders-table-container td:nth-of-type(6)::before {
+        content: "Actions";
+    }
+
+    /* Make content right-aligned */
+    .orders-table-container td>* {
+        text-align: right;
+    }
+
+    /* Empty state fix */
+    .orders-table-container tr.empty-state-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100px;
+    }
+
+    .orders-table-container tr.empty-state-row td {
+        display: block !important;
+        width: 100%;
+        text-align: center !important;
+        border: none !important;
+        padding: 2rem !important;
+    }
+
+    .orders-table-container tr.empty-state-row td::before {
+        content: none !important;
+        display: none !important;
+    }
+}
+
+/* ============================================ */
+/* 3. FILTER BAR - RESPONSIVE */
+/* ============================================ */
+
+.orders-filter-bar {
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .orders-filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar {
+        width: 100% !important;
+    }
+
+    .orders-filter-scroll {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        padding-bottom: 5px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .orders-filter-scroll .btn {
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+}
+
+/* ============================================ */
+/* 4. DETAILS DRAWER - RESPONSIVE */
+/* ============================================ */
+
+.orders-details-drawer {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 400px;
+    height: 100vh;
+    background: white;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+@media (max-width: 1024px) {
+    .orders-details-drawer {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+/* ============================================ */
+/* 5. BUTTONS - RESPONSIVE */
+/* ============================================ */
+
+@media (max-width: 768px) {
+    .orders-table-container button {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    .btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}
+
+/* ============================================ */
+/* 6. PREVENT HORIZONTAL SCROLL */
+/* ============================================ */
+
+.page-container {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+@media (max-width: 768px) {
+    .page-container {
+        padding: 1rem;
+    }
+
+    body,
+    html {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+}

@@ -1,0 +1,6 @@
+Analyzing product_details_screen.dart...                        
+
+warning - Unused import: '../../core/pro_theme.dart' - customer_app\lib\features\menu\product_details_screen.dart:6:8 - unused_import
+   info - The declaration '_addToCart' isn't referenced - customer_app\lib\features\menu\product_details_screen.dart:29:8 - unused_element
+warning - The value of the local variable 'currentPrice' isn't used - customer_app\lib\features\menu\product_details_screen.dart:66:18 - unused_local_variable
+

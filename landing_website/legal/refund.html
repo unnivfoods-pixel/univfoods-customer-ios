@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund Policy | UNIV Foods</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            yellow: '#FFD600',
+                            green: '#1B5E20',
+                            dark: '#0F172A',
+                            navy: '#060B1A',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-blur: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-brand-dark font-sans selection:bg-brand-yellow/30">
+
+    <!-- Premium Navbar -->
+    <nav class="fixed top-8 left-0 right-0 z-50 px-6">
+        <div class="max-w-6xl mx-auto glass-nav rounded-[3rem] px-10 py-3.5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 flex items-center justify-center flex-shrink-0">
+                    <img src="/admin-panel/src/assets/univ_logo.png" alt="UNIV FOODS"
+                        class="max-w-full max-h-full object-contain" />
+                </div>
+                <div class="flex flex-col leading-none">
+                    <span class="text-xl font-[1000] tracking-tighter text-brand-dark">UNIV <span
+                            class="text-brand-yellow">FOODS</span></span>
+                    <span class="text-[8px] font-black uppercase tracking-[0.2em] text-slate-400 mt-0.5">Terminal
+                        Selection</span>
+                </div>
+            </div>
+
+            <a href="../index.html"
+                class="text-[13px] font-black uppercase tracking-widest opacity-70 hover:opacity-100 transition flex items-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                        d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                </svg>
+                Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <main class="pt-48 pb-32 max-w-4xl mx-auto px-8">
+        <h1 class="text-5xl font-black mb-12 tracking-tighter">
+            Refund <span class="font-serif italic text-brand-green">Policy</span>
+        </h1>
+
+        <div class="space-y-12 text-slate-500 font-bold text-lg leading-relaxed">
+            <section class="space-y-4">
+                <h2 class="text-3xl font-[1000] text-brand-dark tracking-tight">1. Quality Assurance</h2>
+                <p>If you receive food that is not up to our premium quality standards or is incorrect, please contact
+                    us within 30 minutes of delivery for a resolution. We take quality seriously and will investigate
+                    every claim.</p>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-3xl font-[1000] text-brand-dark tracking-tight">2. Cancellation Policy</h2>
+                <p>Orders can only be cancelled before they have been accepted by the restaurant. Once preparation has
+                    started, refunds are not possible as ingredients have already been committed. You can track the
+                    status of your order in real-time in the app.</p>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-3xl font-[1000] text-brand-dark tracking-tight">3. Delivery Delays</h2>
+                <p>While we aim for perfection, circumstances like extreme weather or heavy traffic may cause delays. If
+                    your order is
+                    significantly delayed beyond our estimated window, you may be eligible for credit toward your next
+                    order.</p>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-3xl font-[1000] text-brand-dark tracking-tight">4. Refund Process</h2>
+                <p>Approved refunds will be processed back to the original payment method (Credit Card, UPI, etc.)
+                    within 5-7 business days. You will receive an email confirmation once the refund has been initiated.
+                </p>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-3xl font-[1000] text-brand-dark tracking-tight">5. Contact Support</h2>
+                <p>For any refund related queries, please contact our support team at: <a
+                        href="mailto:support@univfoods.in"
+                        class="text-brand-green border-b-2 border-brand-green/20 hover:border-brand-green transition">support@univfoods.in</a>
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-brand-navy py-12 border-t border-slate-800/50 text-center">
+        <p class="text-slate-500 font-bold text-sm uppercase tracking-widest">© 2024 UNIV Foods Inc. All culinary rights
+            reserved.</p>
+    </footer>
+
+</body>
+
+</html>

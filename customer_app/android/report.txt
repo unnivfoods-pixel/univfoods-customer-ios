@@ -1,0 +1,157 @@
+> Task :gradle:compileJava NO-SOURCE
+> Task :gradle:compileGroovy UP-TO-DATE
+> Task :gradle:pluginDescriptors UP-TO-DATE
+> Task :gradle:processResources UP-TO-DATE
+> Task :gradle:classes UP-TO-DATE
+> Task :gradle:jar UP-TO-DATE
+
+> Task :app:signingReport
+Variant: debug
+Config: debug
+Store: C:\Users\ganap\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 84:08:FE:DB:3C:90:09:0D:49:BC:ED:9C:F2:9C:3F:94
+SHA1: AE:4C:1C:20:50:86:55:2E:16:A3:A5:B5:B6:0E:51:8A:BD:6C:65:61
+SHA-256: CB:BA:2E:2E:69:0F:B0:A4:25:58:CC:39:64:92:B7:A9:15:E4:41:41:F7:9F:18:97:6D:BC:78:84:7E:39:36:14
+Valid until: Thursday, 25 December, 2053
+----------
+Variant: release
+Config: debug
+Store: C:\Users\ganap\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 84:08:FE:DB:3C:90:09:0D:49:BC:ED:9C:F2:9C:3F:94
+SHA1: AE:4C:1C:20:50:86:55:2E:16:A3:A5:B5:B6:0E:51:8A:BD:6C:65:61
+SHA-256: CB:BA:2E:2E:69:0F:B0:A4:25:58:CC:39:64:92:B7:A9:15:E4:41:41:F7:9F:18:97:6D:BC:78:84:7E:39:36:14
+Valid until: Thursday, 25 December, 2053
+----------
+Variant: profile
+Config: debug
+Store: C:\Users\ganap\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 84:08:FE:DB:3C:90:09:0D:49:BC:ED:9C:F2:9C:3F:94
+SHA1: AE:4C:1C:20:50:86:55:2E:16:A3:A5:B5:B6:0E:51:8A:BD:6C:65:61
+SHA-256: CB:BA:2E:2E:69:0F:B0:A4:25:58:CC:39:64:92:B7:A9:15:E4:41:41:F7:9F:18:97:6D:BC:78:84:7E:39:36:14
+Valid until: Thursday, 25 December, 2053
+----------
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\ganap\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 84:08:FE:DB:3C:90:09:0D:49:BC:ED:9C:F2:9C:3F:94
+SHA1: AE:4C:1C:20:50:86:55:2E:16:A3:A5:B5:B6:0E:51:8A:BD:6C:65:61
+SHA-256: CB:BA:2E:2E:69:0F:B0:A4:25:58:CC:39:64:92:B7:A9:15:E4:41:41:F7:9F:18:97:6D:BC:78:84:7E:39:36:14
+Valid until: Thursday, 25 December, 2053
+----------
+
+> Task :app_links:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\ganap\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 84:08:FE:DB:3C:90:09:0D:49:BC:ED:9C:F2:9C:3F:94
+SHA1: AE:4C:1C:20:50:86:55:2E:16:A3:A5:B5:B6:0E:51:8A:BD:6C:65:61
+SHA-256: CB:BA:2E:2E:69:0F:B0:A4:25:58:CC:39:64:92:B7:A9:15:E4:41:41:F7:9F:18:97:6D:BC:78:84:7E:39:36:14
+Valid until: Thursday, 25 December, 2053
+----------
+
+> Task :flutter_plugin_android_lifecycle:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\ganap\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 84:08:FE:DB:3C:90:09:0D:49:BC:ED:9C:F2:9C:3F:94
+SHA1: AE:4C:1C:20:50:86:55:2E:16:A3:A5:B5:B6:0E:51:8A:BD:6C:65:61
+SHA-256: CB:BA:2E:2E:69:0F:B0:A4:25:58:CC:39:64:92:B7:A9:15:E4:41:41:F7:9F:18:97:6D:BC:78:84:7E:39:36:14
+Valid until: Thursday, 25 December, 2053
+----------
+
+> Task :fluttertoast:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\ganap\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 84:08:FE:DB:3C:90:09:0D:49:BC:ED:9C:F2:9C:3F:94
+SHA1: AE:4C:1C:20:50:86:55:2E:16:A3:A5:B5:B6:0E:51:8A:BD:6C:65:61
+SHA-256: CB:BA:2E:2E:69:0F:B0:A4:25:58:CC:39:64:92:B7:A9:15:E4:41:41:F7:9F:18:97:6D:BC:78:84:7E:39:36:14
+Valid until: Thursday, 25 December, 2053
+----------
+
+> Task :geolocator_android:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\ganap\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 84:08:FE:DB:3C:90:09:0D:49:BC:ED:9C:F2:9C:3F:94
+SHA1: AE:4C:1C:20:50:86:55:2E:16:A3:A5:B5:B6:0E:51:8A:BD:6C:65:61
+SHA-256: CB:BA:2E:2E:69:0F:B0:A4:25:58:CC:39:64:92:B7:A9:15:E4:41:41:F7:9F:18:97:6D:BC:78:84:7E:39:36:14
+Valid until: Thursday, 25 December, 2053
+----------
+
+> Task :google_maps_flutter_android:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\ganap\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 84:08:FE:DB:3C:90:09:0D:49:BC:ED:9C:F2:9C:3F:94
+SHA1: AE:4C:1C:20:50:86:55:2E:16:A3:A5:B5:B6:0E:51:8A:BD:6C:65:61
+SHA-256: CB:BA:2E:2E:69:0F:B0:A4:25:58:CC:39:64:92:B7:A9:15:E4:41:41:F7:9F:18:97:6D:BC:78:84:7E:39:36:14
+Valid until: Thursday, 25 December, 2053
+----------
+
+> Task :google_sign_in_android:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\ganap\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 84:08:FE:DB:3C:90:09:0D:49:BC:ED:9C:F2:9C:3F:94
+SHA1: AE:4C:1C:20:50:86:55:2E:16:A3:A5:B5:B6:0E:51:8A:BD:6C:65:61
+SHA-256: CB:BA:2E:2E:69:0F:B0:A4:25:58:CC:39:64:92:B7:A9:15:E4:41:41:F7:9F:18:97:6D:BC:78:84:7E:39:36:14
+Valid until: Thursday, 25 December, 2053
+----------
+
+> Task :path_provider_android:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\ganap\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 84:08:FE:DB:3C:90:09:0D:49:BC:ED:9C:F2:9C:3F:94
+SHA1: AE:4C:1C:20:50:86:55:2E:16:A3:A5:B5:B6:0E:51:8A:BD:6C:65:61
+SHA-256: CB:BA:2E:2E:69:0F:B0:A4:25:58:CC:39:64:92:B7:A9:15:E4:41:41:F7:9F:18:97:6D:BC:78:84:7E:39:36:14
+Valid until: Thursday, 25 December, 2053
+----------
+
+> Task :razorpay_flutter:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\ganap\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 84:08:FE:DB:3C:90:09:0D:49:BC:ED:9C:F2:9C:3F:94
+SHA1: AE:4C:1C:20:50:86:55:2E:16:A3:A5:B5:B6:0E:51:8A:BD:6C:65:61
+SHA-256: CB:BA:2E:2E:69:0F:B0:A4:25:58:CC:39:64:92:B7:A9:15:E4:41:41:F7:9F:18:97:6D:BC:78:84:7E:39:36:14
+Valid until: Thursday, 25 December, 2053
+----------
+
+> Task :shared_preferences_android:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\ganap\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 84:08:FE:DB:3C:90:09:0D:49:BC:ED:9C:F2:9C:3F:94
+SHA1: AE:4C:1C:20:50:86:55:2E:16:A3:A5:B5:B6:0E:51:8A:BD:6C:65:61
+SHA-256: CB:BA:2E:2E:69:0F:B0:A4:25:58:CC:39:64:92:B7:A9:15:E4:41:41:F7:9F:18:97:6D:BC:78:84:7E:39:36:14
+Valid until: Thursday, 25 December, 2053
+----------
+
+> Task :url_launcher_android:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\ganap\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 84:08:FE:DB:3C:90:09:0D:49:BC:ED:9C:F2:9C:3F:94
+SHA1: AE:4C:1C:20:50:86:55:2E:16:A3:A5:B5:B6:0E:51:8A:BD:6C:65:61
+SHA-256: CB:BA:2E:2E:69:0F:B0:A4:25:58:CC:39:64:92:B7:A9:15:E4:41:41:F7:9F:18:97:6D:BC:78:84:7E:39:36:14
+Valid until: Thursday, 25 December, 2053
+----------
+
+BUILD SUCCESSFUL in 7s
+15 actionable tasks: 11 executed, 4 up-to-date

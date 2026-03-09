@@ -1,0 +1,156 @@
+Analyzing customer_app...                                       
+
+   info - The imported package 'shared_preferences' isn't a dependency of the importing package - lib\core\cart_state.dart:2:8 - depend_on_referenced_packages
+   info - The imported package 'http' isn't a dependency of the importing package - lib\core\location_service.dart:3:8 - depend_on_referenced_packages
+   info - The imported package 'shared_preferences' isn't a dependency of the importing package - lib\core\location_service.dart:6:8 - depend_on_referenced_packages
+   info - 'timeLimit' is deprecated and shouldn't be used. use settings parameter with AndroidSettings, AppleSettings, WebSettings, or LocationSettings - lib\core\location_service.dart:103:11 - deprecated_member_use
+   info - Unnecessary braces in a string interpolation - lib\core\location_service.dart:289:66 - unnecessary_brace_in_string_interps
+   info - Use 'const' for final variables initialized to a constant value - lib\core\location_service.dart:322:7 - prefer_const_declarations
+   info - Use 'const' with the constructor to improve performance - lib\core\pro_theme.dart:67:16 - prefer_const_constructors
+   info - The imported package 'razorpay_flutter' isn't a dependency of the importing package - lib\core\razorpay_service.dart:1:8 - depend_on_referenced_packages
+  error - Target of URI doesn't exist: 'package:razorpay_flutter/razorpay_flutter.dart' - lib\core\razorpay_service.dart:1:8 - uri_does_not_exist
+  error - Undefined class 'Razorpay' - lib\core\razorpay_service.dart:4:8 - undefined_class
+  error - Undefined class 'PaymentSuccessResponse' - lib\core\razorpay_service.dart:5:18 - undefined_class
+  error - Undefined class 'PaymentFailureResponse' - lib\core\razorpay_service.dart:6:18 - undefined_class
+  error - Undefined class 'ExternalWalletResponse' - lib\core\razorpay_service.dart:7:18 - undefined_class
+  error - The method 'Razorpay' isn't defined for the type 'RazorpayService' - lib\core\razorpay_service.dart:20:17 - undefined_method
+  error - Undefined name 'Razorpay' - lib\core\razorpay_service.dart:21:18 - undefined_identifier
+  error - Undefined name 'Razorpay' - lib\core\razorpay_service.dart:22:18 - undefined_identifier
+  error - Undefined name 'Razorpay' - lib\core\razorpay_service.dart:23:18 - undefined_identifier
+   info - Don't invoke 'print' in production code - lib\core\razorpay_service.dart:61:7 - avoid_print
+   info - The imported package 'firebase_messaging' isn't a dependency of the importing package - lib\core\services\notification_service.dart:1:8 - depend_on_referenced_packages
+  error - Target of URI doesn't exist: 'package:firebase_messaging/firebase_messaging.dart' - lib\core\services\notification_service.dart:1:8 - uri_does_not_exist
+   info - The import of 'package:flutter/foundation.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart' - lib\core\services\notification_service.dart:3:8 - unnecessary_import
+   info - The imported package 'flutter_local_notifications' isn't a dependency of the importing package - lib\core\services\notification_service.dart:4:8 - depend_on_referenced_packages
+  error - Target of URI doesn't exist: 'package:flutter_local_notifications/flutter_local_notifications.dart' - lib\core\services\notification_service.dart:4:8 - uri_does_not_exist
+  error - Undefined class 'RemoteMessage' - lib\core\services\notification_service.dart:9:50 - undefined_class
+  error - Undefined class 'FirebaseMessaging' - lib\core\services\notification_service.dart:15:16 - undefined_class
+  error - Undefined name 'FirebaseMessaging' - lib\core\services\notification_service.dart:15:47 - undefined_identifier
+  error - Undefined class 'FlutterLocalNotificationsPlugin' - lib\core\services\notification_service.dart:16:16 - undefined_class
+  error - The method 'FlutterLocalNotificationsPlugin' isn't defined for the type 'NotificationService' - lib\core\services\notification_service.dart:17:7 - undefined_method
+  error - Undefined class 'NotificationSettings' - lib\core\services\notification_service.dart:21:5 - undefined_class
+  error - Undefined name 'AuthorizationStatus' - lib\core\services\notification_service.dart:27:41 - undefined_identifier
+  error - Undefined class 'AndroidInitializationSettings' - lib\core\services\notification_service.dart:31:13 - undefined_class
+  error - Const variables must be initialized with a constant value - lib\core\services\notification_service.dart:32:11 - const_initialized_with_non_constant_value
+  error - The method 'AndroidInitializationSettings' isn't defined for the type 'NotificationService' - lib\core\services\notification_service.dart:32:11 - undefined_method
+  error - Undefined class 'DarwinInitializationSettings' - lib\core\services\notification_service.dart:34:13 - undefined_class
+  error - The method 'DarwinInitializationSettings' isn't defined for the type 'NotificationService' - lib\core\services\notification_service.dart:35:11 - undefined_method
+  error - Undefined class 'InitializationSettings' - lib\core\services\notification_service.dart:37:13 - undefined_class
+  error - The method 'InitializationSettings' isn't defined for the type 'NotificationService' - lib\core\services\notification_service.dart:38:11 - undefined_method
+  error - Undefined name 'FirebaseMessaging' - lib\core\services\notification_service.dart:46:7 - undefined_identifier
+warning - The operand can't be null, so the condition is always 'true' - lib\core\services\notification_service.dart:51:17 - unnecessary_null_comparison
+  error - Undefined name 'FirebaseMessaging' - lib\core\services\notification_service.dart:58:7 - undefined_identifier
+  error - Undefined class 'RemoteMessage' - lib\core\services\notification_service.dart:58:43 - undefined_class
+  error - Undefined class 'RemoteMessage' - lib\core\services\notification_service.dart:69:46 - undefined_class
+  error - Undefined class 'AndroidNotificationDetails' - lib\core\services\notification_service.dart:70:11 - undefined_class
+  error - The method 'AndroidNotificationDetails' isn't defined for the type 'NotificationService' - lib\core\services\notification_service.dart:71:9 - undefined_method
+  error - Undefined name 'Importance' - lib\core\services\notification_service.dart:74:19 - undefined_identifier
+  error - Undefined name 'Priority' - lib\core\services\notification_service.dart:75:17 - undefined_identifier
+  error - Undefined class 'NotificationDetails' - lib\core\services\notification_service.dart:80:11 - undefined_class
+  error - The method 'NotificationDetails' isn't defined for the type 'NotificationService' - lib\core\services\notification_service.dart:81:9 - undefined_method
+  error - The getter 'forcedUserId' isn't defined for the type 'SupabaseConfig' - lib\core\services\notification_service.dart:93:35 - undefined_getter
+  error - The name 'RemoteMessage' isn't a class - lib\core\services\notification_service.dart:109:40 - creation_with_non_type
+  error - The method 'RemoteNotification' isn't defined for the type 'NotificationService' - lib\core\services\notification_service.dart:110:23 - undefined_method
+  error - Undefined class 'AndroidNotificationDetails' - lib\core\services\notification_service.dart:120:11 - undefined_class
+  error - The method 'AndroidNotificationDetails' isn't defined for the type 'NotificationService' - lib\core\services\notification_service.dart:121:9 - undefined_method
+  error - Undefined name 'Importance' - lib\core\services\notification_service.dart:124:19 - undefined_identifier
+  error - Undefined name 'Priority' - lib\core\services\notification_service.dart:125:17 - undefined_identifier
+  error - Undefined class 'NotificationDetails' - lib\core\services\notification_service.dart:130:11 - undefined_class
+  error - The method 'NotificationDetails' isn't defined for the type 'NotificationService' - lib\core\services\notification_service.dart:131:9 - undefined_method
+  error - The getter 'forcedUserId' isn't defined for the type 'SupabaseConfig' - lib\core\services\realtime_notification_listener.dart:8:35 - undefined_getter
+  error - The getter 'forcedUserId' isn't defined for the type 'SupabaseConfig' - lib\core\services\realtime_notification_listener.dart:50:35 - undefined_getter
+   info - The imported package 'http' isn't a dependency of the importing package - lib\core\services\routing_service.dart:2:8 - depend_on_referenced_packages
+   info - Don't invoke 'print' in production code - lib\core\services\routing_service.dart:23:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\services\routing_service.dart:49:7 - avoid_print
+   info - The imported package 'firebase_auth' isn't a dependency of the importing package - lib\features\auth\splash_login_screen.dart:4:8 - depend_on_referenced_packages
+  error - Target of URI doesn't exist: 'package:firebase_auth/firebase_auth.dart' - lib\features\auth\splash_login_screen.dart:4:8 - uri_does_not_exist
+   info - The private field _showLoginSheet could be 'final' - lib\features\auth\splash_login_screen.dart:22:8 - prefer_final_fields
+warning - The value of the field '_showLoginSheet' isn't used - lib\features\auth\splash_login_screen.dart:22:8 - unused_field
+  error - The getter 'forcedUserId' isn't defined for the type 'SupabaseConfig' - lib\features\auth\splash_login_screen.dart:28:24 - undefined_getter
+   info - Don't invoke 'print' in production code - lib\features\auth\splash_login_screen.dart:44:5 - avoid_print
+  error - Undefined name 'FirebaseAuth' - lib\features\auth\splash_login_screen.dart:63:13 - undefined_identifier
+  error - Undefined class 'PhoneAuthCredential' - lib\features\auth\splash_login_screen.dart:66:33 - undefined_class
+  error - Undefined class 'FirebaseAuthException' - lib\features\auth\splash_login_screen.dart:69:30 - undefined_class
+   info - Don't invoke 'print' in production code - lib\features\auth\splash_login_screen.dart:70:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\auth\splash_login_screen.dart:95:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\auth\splash_login_screen.dart:115:7 - avoid_print
+   info - Statements in an if should be enclosed in a block - lib\features\auth\splash_login_screen.dart:135:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\auth\splash_login_screen.dart:140:7 - curly_braces_in_flow_control_structures
+  error - Undefined class 'PhoneAuthCredential' - lib\features\auth\splash_login_screen.dart:146:7 - undefined_class
+  error - Undefined name 'PhoneAuthProvider' - lib\features\auth\splash_login_screen.dart:146:40 - undefined_identifier
+  error - Undefined class 'PhoneAuthCredential' - lib\features\auth\splash_login_screen.dart:161:38 - undefined_class
+  error - Undefined name 'FirebaseAuth' - lib\features\auth\splash_login_screen.dart:163:13 - undefined_identifier
+  error - Undefined name 'FirebaseAuth' - lib\features\auth\splash_login_screen.dart:164:22 - undefined_identifier
+  error - The method 'syncUser' isn't defined for the type 'SupabaseConfig' - lib\features\auth\splash_login_screen.dart:170:46 - undefined_method
+  error - The getter 'forcedUserId' isn't defined for the type 'SupabaseConfig' - lib\features\auth\splash_login_screen.dart:174:30 - undefined_getter
+  error - The method 'saveSession' isn't defined for the type 'SupabaseConfig' - lib\features\auth\splash_login_screen.dart:175:28 - undefined_method
+  error - The getter 'forcedUserId' isn't defined for the type 'SupabaseConfig' - lib\features\auth\splash_login_screen.dart:175:55 - undefined_getter
+   info - Statements in an if should be enclosed in a block - lib\features\cart\cart_screen.dart:91:9 - curly_braces_in_flow_control_structures
+warning - Unused import: 'dart:async' - lib\features\home\home_screen.dart:8:8 - unused_import
+  error - The getter 'black24' isn't defined for the type 'Colors' - lib\features\home\home_screen.dart:392:51 - undefined_getter
+warning - Unused import: 'package:supabase_flutter/supabase_flutter.dart' - lib\features\home\map_screen.dart:5:8 - unused_import
+warning - The value of the field '_loading' isn't used - lib\features\home\map_screen.dart:22:8 - unused_field
+   info - Use 'const' with the constructor to improve performance - lib\features\home\map_screen.dart:177:34 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\home\map_screen.dart:178:36 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\home\map_screen.dart:180:38 - prefer_const_constructors
+   info - Unnecessary use of 'toList' in a spread - lib\features\home\map_screen.dart:186:22 - unnecessary_to_list_in_spreads
+   info - Use 'const' with the constructor to improve performance - lib\features\home\map_screen.dart:288:11 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\home\map_screen.dart:289:23 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\features\home\map_screen.dart:290:15 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\home\map_screen.dart:291:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\home\map_screen.dart:294:15 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\home\map_screen.dart:295:24 - prefer_const_constructors
+warning - Unused import: 'package:flutter_animate/flutter_animate.dart' - lib\features\menu\menu_screen.dart:3:8 - unused_import
+warning - Unused import: '../../core/pro_theme.dart' - lib\features\menu\menu_screen.dart:4:8 - unused_import
+warning - Unused import: '../../core/cart_state.dart' - lib\features\menu\menu_screen.dart:6:8 - unused_import
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\menu\menu_screen.dart:271:28 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\features\menu\menu_screen.dart:271:29 - prefer_const_constructors
+   info - The prefix 'Math' isn't a lower_case_with_underscores identifier - lib\features\orders\order_details_screen.dart:2:23 - library_prefixes
+   info - The imported package 'url_launcher' isn't a dependency of the importing package - lib\features\orders\order_details_screen.dart:5:8 - depend_on_referenced_packages
+   info - The imported package 'google_maps_flutter' isn't a dependency of the importing package - lib\features\orders\order_details_screen.dart:8:8 - depend_on_referenced_packages
+  error - Target of URI doesn't exist: 'package:google_maps_flutter/google_maps_flutter.dart' - lib\features\orders\order_details_screen.dart:8:8 - uri_does_not_exist
+   info - Statements in an if should be enclosed in a block - lib\features\orders\order_details_screen.dart:120:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\orders\order_details_screen.dart:147:11 - curly_braces_in_flow_control_structures
+   info - The local variable '_debounce' starts with an underscore - lib\features\orders\order_details_screen.dart:160:12 - no_leading_underscores_for_local_identifiers
+   info - Statements in a while should be enclosed in a block - lib\features\orders\order_details_screen.dart:218:25 - curly_braces_in_flow_control_structures
+   info - Statements in a while should be enclosed in a block - lib\features\orders\order_details_screen.dart:219:24 - curly_braces_in_flow_control_structures
+  error - The getter 'isGuest' isn't defined for the type 'SupabaseConfig' - lib\features\orders\order_details_screen.dart:251:26 - undefined_getter
+  error - The getter 'developerMode' isn't defined for the type 'SupabaseConfig' - lib\features\orders\order_details_screen.dart:252:26 - undefined_getter
+   info - The declaration '_showInstructionModal' isn't referenced - lib\features\orders\order_details_screen.dart:505:8 - unused_element
+   info - The declaration '_buildSafetyBanner' isn't referenced - lib\features\orders\order_details_screen.dart:1104:10 - unused_element
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\order_details_screen.dart:1161:17 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\orders\order_details_screen.dart:1163:29 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\order_details_screen.dart:1256:32 - prefer_const_constructors
+   info - The declaration '_showRatingDialog' isn't referenced - lib\features\orders\order_details_screen.dart:1385:8 - unused_element
+   info - The local variable '_msgController' starts with an underscore - lib\features\orders\order_details_screen.dart:1417:33 - no_leading_underscores_for_local_identifiers
+  error - The getter 'forcedUserId' isn't defined for the type 'SupabaseConfig' - lib\features\orders\order_details_screen.dart:1576:55 - undefined_getter
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\orders_screen.dart:288:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\orders_screen.dart:289:23 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\orders_screen.dart:294:23 - prefer_const_constructors
+   info - The imported package 'shared_preferences' isn't a dependency of the importing package - lib\features\profile\favorites_screen.dart:7:8 - depend_on_referenced_packages
+  error - The getter 'forcedUserId' isn't defined for the type 'SupabaseConfig' - lib\features\profile\favorites_screen.dart:36:47 - undefined_getter
+warning - Unused import: 'package:supabase_flutter/supabase_flutter.dart' - lib\features\profile\legal_consent_screen.dart:6:8 - unused_import
+   info - Don't use 'BuildContext's across async gaps - lib\features\profile\legal_consent_screen.dart:101:28 - use_build_context_synchronously
+   info - Statements in an if should be enclosed in a block - lib\features\profile\legal_consent_screen.dart:109:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\profile\legal_consent_screen.dart:114:7 - curly_braces_in_flow_control_structures
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\legal_screen.dart:91:15 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\legal_screen.dart:134:24 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:271:22 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\profile\profile_pages.dart:274:27 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:289:19 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\profile\profile_pages.dart:291:31 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:303:23 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\profile\profile_pages.dart:305:35 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:309:27 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:324:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:328:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:332:13 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\profile\profile_pages.dart:531:21 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:533:13 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:539:13 - prefer_const_constructors
+warning - Unused import: 'package:supabase_flutter/supabase_flutter.dart' - lib\features\profile\profile_screen.dart:3:8 - unused_import
+   info - Statements in an if should be enclosed in a block - lib\features\profile\profile_screen.dart:21:7 - curly_braces_in_flow_control_structures
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_screen.dart:106:34 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\profile\profile_screen.dart:108:39 - prefer_const_literals_to_create_immutables
+
+152 issues found. (ran in 24.2s)

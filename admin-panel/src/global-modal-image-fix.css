@@ -1,0 +1,193 @@
+/* 🔧 GLOBAL FIX - ALL MODALS & IMAGES */
+
+/* ============================================ */
+/* 1. ALL MODALS - COVER ENTIRE SCREEN */
+/* ============================================ */
+
+.modal-overlay,
+[class*="modal-overlay"],
+[class*="Modal"],
+.overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    left: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(0, 0, 0, 0.6) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 9999 !important;
+    padding: 1rem !important;
+}
+
+.modal-content,
+[class*="modal-content"],
+[class*="Modal-content"] {
+    position: relative !important;
+    z-index: 10000 !important;
+    max-width: 600px !important;
+    width: 100% !important;
+    max-height: 90vh !important;
+    overflow-y: auto !important;
+    background: white !important;
+    border-radius: 20px !important;
+    padding: 2rem !important;
+}
+
+/* ============================================ */
+/* 2. ALL IMAGES - PROPER CENTERING */
+/* ============================================ */
+
+/* Product/Category/Menu Images */
+.product-image,
+.category-image,
+.menu-image,
+.item-image,
+[class*="image-wrapper"],
+[class*="Image"] {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+}
+
+.product-image img,
+.category-image img,
+.menu-image img,
+.item-image img,
+[class*="image-wrapper"] img,
+[class*="Image"] img {
+    object-fit: cover !important;
+    object-position: center center !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Circular Images */
+.category-image-wrapper,
+[class*="circular"],
+[class*="round"] {
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.category-image-wrapper img,
+[class*="circular"] img,
+[class*="round"] img {
+    object-fit: cover !important;
+    object-position: center center !important;
+}
+
+/* Square Images */
+.product-image,
+.menu-image,
+.item-image {
+    border-radius: 8px !important;
+    overflow: hidden !important;
+}
+
+/* ============================================ */
+/* 3. TABLE IMAGES - CONSISTENT SIZE */
+/* ============================================ */
+
+table td img,
+.data-table img,
+.table img {
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    border-radius: 8px !important;
+}
+
+/* ============================================ */
+/* 4. MOBILE MODAL - FULL SCREEN */
+/* ============================================ */
+
+@media (max-width: 768px) {
+
+    .modal-overlay,
+    [class*="modal-overlay"] {
+        padding: 0 !important;
+    }
+
+    .modal-content,
+    [class*="modal-content"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 100vh !important;
+        max-height: 100vh !important;
+        border-radius: 0 !important;
+        padding: 1.5rem !important;
+    }
+
+    .modal-header,
+    [class*="modal-header"] {
+        position: sticky !important;
+        top: 0 !important;
+        background: white !important;
+        z-index: 10 !important;
+        padding-bottom: 1rem !important;
+        margin-bottom: 1rem !important;
+        border-bottom: 1px solid #e0e0e0 !important;
+    }
+
+    .modal-footer,
+    [class*="modal-footer"] {
+        position: sticky !important;
+        bottom: 0 !important;
+        background: white !important;
+        padding-top: 1rem !important;
+        margin-top: 1rem !important;
+        border-top: 1px solid #e0e0e0 !important;
+        flex-direction: column !important;
+    }
+
+    .modal-footer button,
+    [class*="modal-footer"] button {
+        width: 100% !important;
+    }
+}
+
+/* ============================================ */
+/* 5. PREVENT HORIZONTAL OVERFLOW */
+/* ============================================ */
+
+.modal-content *,
+[class*="modal-content"] * {
+    max-width: 100% !important;
+}
+
+/* ============================================ */
+/* 6. IMAGE UPLOAD PREVIEW */
+/* ============================================ */
+
+.image-preview,
+[class*="preview"],
+.upload-preview {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: 200px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+    border-radius: 12px !important;
+    margin: 0 auto !important;
+}
+
+.image-preview img,
+[class*="preview"] img,
+.upload-preview img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+}

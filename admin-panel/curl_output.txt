@@ -1,0 +1,36 @@
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+
+  0      0   0      0   0      0      0      0                              0*   Trying [::1]:5173...
+* Established connection to ::1 (::1 port 5173) from ::1 port 51971 
+* using HTTP/1.x
+> GET / HTTP/1.1
+
+> Host: [::1]:5173
+
+> User-Agent: curl/8.18.0
+
+> Accept: */*
+
+> 
+
+* Request completely sent off
+< HTTP/1.1 404 Not Found
+
+< Vary: Origin
+
+< Date: Wed, 04 Mar 2026 14:24:29 GMT
+
+< Connection: keep-alive
+
+< Keep-Alive: timeout=5
+
+< Content-Length: 0
+
+< 
+
+
+  0      0   0      0   0      0      0      0                              0
+  0      0   0      0   0      0      0      0                              0
+  0      0   0      0   0      0      0      0                              0
+* Connection #0 to host ::1:5173 left intact

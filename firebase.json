@@ -1,0 +1,28 @@
+{
+  "hosting": [
+    {
+      "target": "univfoods",
+      "public": "landing_website",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    {
+      "target": "univfoods-admin",
+      "public": "admin-panel/dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

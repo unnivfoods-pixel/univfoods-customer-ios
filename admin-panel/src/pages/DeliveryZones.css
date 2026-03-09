@@ -1,0 +1,149 @@
+/* Existing Styles */
+.zones-page {
+    height: calc(100vh - 20px);
+    display: flex;
+    flex-direction: column;
+}
+
+.map-container {
+    flex: 1;
+    position: relative;
+    padding: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top: 1rem;
+    height: 100%;
+}
+
+.leaflet-container {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.zone-details-panel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    width: 350px;
+    /* Wider Panel */
+    background: white;
+    z-index: 1000;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.panel-body {
+    flex: 1;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+    padding: 8px;
+    background: #f8f9fa;
+    border-radius: 6px;
+}
+
+.highlight {
+    color: var(--warning);
+    font-weight: bold;
+}
+
+.panel-actions {
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+.point-marker {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border: 2px solid #333;
+    border-radius: 50%;
+}
+
+/* NEW FORM STYLES */
+.zone-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #666;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+.divider {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #999;
+    margin: 1rem 0 0.5rem 0;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.toggle-row {
+    padding: 10px;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.toggle-row input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--primary);
+}

@@ -1,0 +1,23 @@
+Analyzing profile_pages.dart...                                 
+
+  error - The named parameter 'child' is required, but there's no corresponding argument - lib\features\profile\profile_pages.dart:305:24 - missing_required_argument
+  error - A try block must be followed by an 'on', 'catch', or 'finally' clause - lib\features\profile\profile_pages.dart:315:21 - missing_catch_or_finally
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\profile\profile_pages.dart:332:38 - use_build_context_synchronously
+  error - 'catch' can't be used as an identifier because it's a keyword - lib\features\profile\profile_pages.dart:339:23 - expected_identifier_but_got_keyword
+  error - Expected to find ',' - lib\features\profile\profile_pages.dart:339:23 - expected_token
+  error - The method 'catch' isn't defined for the type '_SavedAddressesScreenState' - lib\features\profile\profile_pages.dart:339:23 - undefined_method
+  error - Too many positional arguments: 0 expected, but 2 found - lib\features\profile\profile_pages.dart:339:23 - extra_positional_arguments_could_be_named
+  error - Undefined name 'e' - lib\features\profile\profile_pages.dart:339:30 - undefined_identifier
+  error - Expected to find ',' - lib\features\profile\profile_pages.dart:339:33 - expected_token
+  error - Undefined name 'e' - lib\features\profile\profile_pages.dart:340:58 - undefined_identifier
+  error - Expected to find '}' - lib\features\profile\profile_pages.dart:340:61 - expected_token
+  error - Expected to find ')' - lib\features\profile\profile_pages.dart:348:19 - expected_token
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:429:40 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:430:44 - prefer_const_constructors
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\profile\profile_pages.dart:459:56 - use_build_context_synchronously
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:472:29 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:474:40 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:475:44 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:754:30 - prefer_const_constructors
+   info - Unnecessary use of 'toList' in a spread - lib\features\profile\profile_pages.dart:765:18 - unnecessary_to_list_in_spreads
+

@@ -1,0 +1,144 @@
+/* Products Page Mobile Styles */
+
+/* Ensure Checkbox is visible */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #333;
+    user-select: none;
+    padding: 8px 0;
+}
+
+.checkbox-container input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    accent-color: #fca5a5;
+    /* Match theme danger/veg color or primary */
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Products Table Container */
+.products-table-container {
+    padding: 0;
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+
+    /* Stack Header Elements */
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .page-header>div:last-child {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn-group {
+        flex: 1;
+        justify-content: center;
+    }
+
+    /* Stack Search Bar */
+    .glass-panel>div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    /* CARD VIEW LOGIC FOR PRODUCTS */
+    /* Hide Table Header */
+    .products-table-container thead {
+        display: none;
+    }
+
+    /* Make rows cards */
+    .products-table-container tr {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        margin-bottom: 1rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        border: 1px solid #eee;
+        padding: 1rem;
+        position: relative;
+    }
+
+    .products-table-container td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 0 !important;
+        border-bottom: 1px dashed #eee;
+        font-size: 0.9rem;
+    }
+
+    .products-table-container td:last-child {
+        border-bottom: none;
+        padding-top: 1rem !important;
+        justify-content: flex-end;
+        /* Actions */
+    }
+
+    /* Pseudo-labels for Data */
+    .products-table-container td:nth-of-type(1)::before {
+        content: "";
+        display: none;
+    }
+
+    /* Item Info is self-descriptive usually, or complex */
+    .products-table-container td:nth-of-type(2)::before {
+        content: "Vendor";
+        font-weight: 600;
+        color: #666;
+    }
+
+    .products-table-container td:nth-of-type(3)::before {
+        content: "Category";
+        font-weight: 600;
+        color: #666;
+    }
+
+    .products-table-container td:nth-of-type(4)::before {
+        content: "Price";
+        font-weight: 600;
+        color: #666;
+    }
+
+    .products-table-container td:nth-of-type(5)::before {
+        content: "Status";
+        font-weight: 600;
+        color: #666;
+    }
+
+    .products-table-container td:nth-of-type(6)::before {
+        content: "Actions";
+        font-weight: 600;
+        color: #666;
+        display: none;
+    }
+
+    /* Hide label for actions */
+
+    /* Special styling for Item Info (First Cell) since it has nested divs */
+    .products-table-container td:nth-of-type(1) {
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 0.8rem !important;
+        margin-bottom: 0.5rem;
+    }
+}

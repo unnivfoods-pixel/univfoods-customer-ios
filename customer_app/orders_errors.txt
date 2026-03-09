@@ -1,0 +1,6 @@
+Analyzing orders_screen.dart...                                 
+
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\orders_screen.dart:100:26 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\orders_screen.dart:452:25 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\orders_screen.dart:453:36 - prefer_const_constructors
+

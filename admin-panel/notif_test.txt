@@ -1,0 +1,15 @@
+NOTIFICATION COLUMNS: [
+  'id',              'user_id',
+  'role',            'title',
+  'body',            'data',
+  'is_read',         'created_at',
+  'target_audience', 'image_url',
+  'order_id',        'priority',
+  'deep_link',       'app_type',
+  'type',            'read_status',
+  'message',         'event_type',
+  'target_type',     'user_role'
+]
+SAMPLE NOTIF: {"id":"7b42fba0-4c4f-44bd-8071-1e7f29d6319a","user_id":"4KUcgo4nw9MMwmnzohwZlEMI0Ng2","role":null,"title":"≡ƒæ¿ΓÇì≡ƒì│ Cooking Started","body":"Your food is being freshly prepared.","data":null,"is_read":false,"created_at":"2026-03-06T22:13:19.130828+00:00","target_audience":"ALL","image_url":null,"order_id":"711a672f-2eeb-4218-b457-3c4e9f2726ba","priority":"NORMAL","deep_link":null,"app_type":null,"type":"ORDER_UPDATE","read_status":false,"message":null,"event_type":null,"target_type":"specific","user_role":null}
+NOTIFS FOR MASTER ID: [{"title":"≡ƒæ¿ΓÇì≡ƒì│ Cooking Started","created_at":"2026-03-06T22:33:14.626095+00:00","user_id":"rrgtG3C1UHgI"},{"title":"Order Update","created_at":"2026-03-06T22:33:14.626095+00:00","user_id":"rrgtG3C1UHgI"},{"title":"Preparing Your Food","created_at":"2026-03-06T22:33:14.626095+00:00","user_id":"rrgtG3C1UHgI"},{"title":"≡ƒì│ Preparing Your Food","created_at":"2026-03-06T22:33:14.626095+00:00","user_id":"rrgtG3C1UHgI"},{"title":"Γ£à Order Accepted!","created_at":"2026-03-06T22:13:23.531223+00:00","user_id":"rrgtG3C1UHgI"}]
+INSERT TEST: SUCCESS - ID:a6f91465-c699-440f-8f66-741684fbbc80 undefined

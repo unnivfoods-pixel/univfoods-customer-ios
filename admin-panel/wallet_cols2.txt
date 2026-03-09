@@ -1,0 +1,10 @@
+COLS: [
+  'id',
+  'user_id',
+  'balance',
+  'updated_at',
+  'pending_settlement',
+  'lifetime_earnings',
+  'cod_debt'
+]
+DATA: [{"id":"777a7054-ed9c-43e2-b5b1-5029d25d384c","user_id":"00000000-0000-0000-0000-000000000001","balance":1000,"updated_at":"2026-02-24T09:59:33.256348+00:00","pending_settlement":0,"lifetime_earnings":0,"cod_debt":0},{"id":"9e79357d-204d-4c66-9c3d-8a8b39078d1b","user_id":"35e786fa-e0cc-48d6-b3ee-6a4250679474","balance":0,"updated_at":"2026-02-27T21:32:13.699435+00:00","pending_settlement":0,"lifetime_earnings":0,"cod_debt":0}]

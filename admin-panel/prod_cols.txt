@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-03-04T18:14:41.251076+00:00",
+  "vendor_id": "837f5fde-2d76-4515-9151-df42ac18bdb9",
+  "name": "chicken curry",
+  "description": "",
+  "price": 100,
+  "image_url": "https://dxqcruvarqgnscenixzf.supabase.co/storage/v1/object/public/images/products/1772648077526-8hx2kq6nqru.jpg",
+  "is_available": true,
+  "category": "Main",
+  "is_veg": true,
+  "rating": 0,
+  "votes": 0,
+  "bestseller": false,
+  "discount_price": null,
+  "spice_level": "Medium",
+  "is_signature": false,
+  "category_id": null,
+  "id": "696afef8-5daa-49dd-ae92-94d69b35584c",
+  "status": "Available",
+  "is_active": true
+}

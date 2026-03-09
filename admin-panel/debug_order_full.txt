@@ -1,0 +1,33 @@
+RAW ORDER STATUS: ACCEPTED CUSTOMER_ID: rrgtG3C1UHgIcBMMtfdSnF2Vxup2
+TRACKING VIEW cols: [
+  'order_id',       'id',
+  'customer_id',    'vendor_id',
+  'rider_id',       'order_status',
+  'payment_status', 'payment_method',
+  'total_amount',   'delivery_address',
+  'delivery_lat',   'delivery_lng',
+  'vendor_lat',     'vendor_lng',
+  'rider_lat',      'rider_lng',
+  'items',          'created_at',
+  'updated_at',     'status_display',
+  'current_step',   'vendor_name',
+  'vendor_image',   'vendor_logo',
+  'vendor_phone',   'vendor_address',
+  'rider_name',     'rider_phone',
+  'rider_avatar',   'rider_rating',
+  'rider_vehicle'
+] ERR: undefined
+STATUS IN VIEW: undefined PLACED
+V3 cols: [
+  'id',             'customer_id',
+  'vendor_id',      'rider_id',
+  'total',          'status',
+  'items',          'delivery_lat',
+  'delivery_lng',   'delivery_address',
+  'created_at',     'payment_method',
+  'vendor_name',    'vendor_address',
+  'vendor_phone',   'customer_name',
+  'customer_phone'
+] ERR: undefined
+V3 STATUS: PLACED undefined
+NOTIFICATIONS: [{"type":null,"title":"Order Update","user_id":"rrgtG3C1UHgIcBMMtfdSnF2Vxup2"},{"type":"order","title":"Order Accepted ≡ƒæ¿ΓÇì≡ƒì│","user_id":"rrgtG3C1UHgIcBMMtfdSnF2Vxup2"},{"type":null,"title":"Order Update","user_id":"rrgtG3C1UHgIcBMMtfdSnF2Vxup2"},{"type":"order","title":"Preparing Your Food","user_id":"rrgtG3C1UHgIcBMMtfdSnF2Vxup2"},{"type":"order","title":"Ready for Extraction","user_id":"sms_auth_8897868951"},{"type":null,"title":"Order Update","user_id":"sms_auth_8897868951"},{"type":null,"title":"Order Update","user_id":"sms_auth_8897868951"},{"type":"order","title":"Order Accepted ≡ƒæ¿ΓÇì≡ƒì│","user_id":"sms_auth_8897868951"},{"type":null,"title":"Order Update","user_id":"sms_auth_8897868951"},{"type":"order","title":"Preparing Your Food","user_id":"sms_auth_8897868951"},{"type":"order","title":"Order Accepted ≡ƒæ¿ΓÇì≡ƒì│","user_id":"sms_auth_8897868951"},{"type":null,"title":"Order Update","user_id":"sms_auth_8897868951"},{"type":null,"title":"Order Update","user_id":"sms_auth_8897868951"},{"type":"order","title":"Preparing Your Food","user_id":"sms_auth_8897868951"},{"type":null,"title":"Order Update","user_id":"sms_auth_8897868951"},{"type":"order","title":"Order Accepted ≡ƒæ¿ΓÇì≡ƒì│","user_id":"sms_auth_8897868951"},{"type":null,"title":"Order Update","user_id":"sms_auth_8897868951"},{"type":null,"title":"Order Update","user_id":"sms_auth_8897868951"},{"type":"order","title":"Order Accepted ≡ƒæ¿ΓÇì≡ƒì│","user_id":"sms_auth_8897868951"},{"type":null,"title":"New Order Received! ≡ƒ¢ì∩╕Å","user_id":null},{"type":"order","title":"≡ƒÜÇ New Order!","user_id":"c1589737-0561-4d9d-a499-214655f16992"},{"type":"order","title":"≡ƒì¢ Order Placed!","user_id":"sms_auth_8897868951"},{"type":"ORDER_UPDATE","title":"≡ƒöö New Order Received!","user_id":"c1589737-0561-4d9d-a499-214655f16992"},{"type":"order","title":"Success","user_id":"sms_auth_8897868951"}]

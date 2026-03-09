@@ -1,0 +1,72 @@
+Analyzing customer_app...                                       
+
+   info - 'timeLimit' is deprecated and shouldn't be used. use settings parameter with AndroidSettings, AppleSettings, WebSettings, or LocationSettings - lib\core\location_service.dart:103:11 - deprecated_member_use
+   info - Unnecessary braces in a string interpolation - lib\core\location_service.dart:289:66 - unnecessary_brace_in_string_interps
+   info - Use 'const' for final variables initialized to a constant value - lib\core\location_service.dart:322:7 - prefer_const_declarations
+   info - Don't invoke 'print' in production code - lib\core\razorpay_service.dart:61:7 - avoid_print
+   info - The import of 'package:flutter/foundation.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart' - lib\core\services\notification_service.dart:3:8 - unnecessary_import
+   info - Use 'const' with the constructor to improve performance - lib\core\services\notification_service.dart:35:11 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\core\services\notification_service.dart:71:9 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\core\services\notification_service.dart:121:9 - prefer_const_constructors
+   info - Don't invoke 'print' in production code - lib\core\services\routing_service.dart:23:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\services\routing_service.dart:49:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\supabase_config.dart:82:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\supabase_config.dart:84:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\supabase_config.dart:95:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\supabase_config.dart:110:9 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\supabase_config.dart:119:13 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\supabase_config.dart:121:13 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\supabase_config.dart:126:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\supabase_config.dart:139:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\supabase_config.dart:141:7 - avoid_print
+   info - The private field _showLoginSheet could be 'final' - lib\features\auth\splash_login_screen.dart:22:8 - prefer_final_fields
+warning - The value of the field '_showLoginSheet' isn't used - lib\features\auth\splash_login_screen.dart:22:8 - unused_field
+   info - Don't invoke 'print' in production code - lib\features\auth\splash_login_screen.dart:44:5 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\auth\splash_login_screen.dart:48:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\auth\splash_login_screen.dart:104:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\auth\splash_login_screen.dart:129:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\auth\splash_login_screen.dart:149:7 - avoid_print
+   info - Statements in an if should be enclosed in a block - lib\features\auth\splash_login_screen.dart:186:9 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\auth\splash_login_screen.dart:191:7 - curly_braces_in_flow_control_structures
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\auth\splash_login_screen.dart:291:50 - use_build_context_synchronously
+warning - Unused import: '../../core/location_service.dart' - lib\features\cart\cart_screen.dart:10:8 - unused_import
+warning - The value of the field '_paymentMethod' isn't used - lib\features\cart\cart_screen.dart:25:10 - unused_field
+warning - The value of the field '_selectedUpiApp' isn't used - lib\features\cart\cart_screen.dart:26:10 - unused_field
+   info - Use 'const' for final variables initialized to a constant value - lib\features\cart\cart_screen.dart:153:5 - prefer_const_declarations
+   info - Use 'const' for final variables initialized to a constant value - lib\features\cart\cart_screen.dart:154:5 - prefer_const_declarations
+   info - The declaration '_showAddAddressForm' isn't referenced - lib\features\cart\cart_screen.dart:1024:8 - unused_element
+   info - Statements in an if should be enclosed in a block - lib\features\home\home_screen.dart:108:19 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\home\home_screen.dart:350:7 - curly_braces_in_flow_control_structures
+   info - Don't use 'BuildContext's across async gaps - lib\features\home\home_screen.dart:423:28 - use_build_context_synchronously
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\menu\menu_screen.dart:919:20 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\features\menu\menu_screen.dart:920:11 - prefer_const_constructors
+   info - The prefix 'Math' isn't a lower_case_with_underscores identifier - lib\features\orders\order_details_screen.dart:2:23 - library_prefixes
+   info - Statements in an if should be enclosed in a block - lib\features\orders\order_details_screen.dart:120:11 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\orders\order_details_screen.dart:147:11 - curly_braces_in_flow_control_structures
+   info - The local variable '_debounce' starts with an underscore - lib\features\orders\order_details_screen.dart:160:12 - no_leading_underscores_for_local_identifiers
+   info - Statements in a while should be enclosed in a block - lib\features\orders\order_details_screen.dart:218:25 - curly_braces_in_flow_control_structures
+   info - Statements in a while should be enclosed in a block - lib\features\orders\order_details_screen.dart:219:24 - curly_braces_in_flow_control_structures
+   info - The declaration '_showInstructionModal' isn't referenced - lib\features\orders\order_details_screen.dart:505:8 - unused_element
+   info - The declaration '_buildSafetyBanner' isn't referenced - lib\features\orders\order_details_screen.dart:1104:10 - unused_element
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\order_details_screen.dart:1161:17 - prefer_const_constructors
+   info - Use 'const' literals as arguments to constructors of '@immutable' classes - lib\features\orders\order_details_screen.dart:1163:29 - prefer_const_literals_to_create_immutables
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\order_details_screen.dart:1256:32 - prefer_const_constructors
+   info - The declaration '_showRatingDialog' isn't referenced - lib\features\orders\order_details_screen.dart:1385:8 - unused_element
+   info - The local variable '_msgController' starts with an underscore - lib\features\orders\order_details_screen.dart:1417:33 - no_leading_underscores_for_local_identifiers
+   info - The imported package 'intl' isn't a dependency of the importing package - lib\features\orders\orders_screen.dart:2:8 - depend_on_referenced_packages
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\orders_screen.dart:100:26 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\orders_screen.dart:452:25 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\orders\orders_screen.dart:453:36 - prefer_const_constructors
+   info - Statements in an if should be enclosed in a block - lib\features\profile\legal_consent_screen.dart:113:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\profile\legal_consent_screen.dart:118:7 - curly_braces_in_flow_control_structures
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\legal_screen.dart:91:15 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\legal_screen.dart:134:24 - prefer_const_constructors
+warning - Dead code - lib\features\profile\profile_pages.dart:314:21 - dead_code
+   info - Statements in an if should be enclosed in a block - lib\features\profile\profile_pages.dart:451:33 - curly_braces_in_flow_control_structures
+   info - The declaration '_addNewAddress' isn't referenced - lib\features\profile\profile_pages.dart:511:8 - unused_element
+   info - Don't use 'BuildContext's across async gaps - lib\features\profile\profile_pages.dart:1013:44 - use_build_context_synchronously
+   info - Statements in an if should be enclosed in a block - lib\features\profile\profile_pages.dart:1303:11 - curly_braces_in_flow_control_structures
+   info - Don't invoke 'print' in production code - lib\features\profile\profile_pages.dart:1550:7 - avoid_print
+   info - Don't invoke 'print' in production code - lib\features\profile\profile_pages.dart:1576:7 - avoid_print
+   info - The declaration '_addMockPaymentMethod' isn't referenced - lib\features\profile\profile_pages.dart:1878:8 - unused_element
+

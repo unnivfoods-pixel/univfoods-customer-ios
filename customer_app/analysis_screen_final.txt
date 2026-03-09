@@ -1,0 +1,7 @@
+Analyzing profile_screen.dart...                                
+
+   info - Statements in an if should be enclosed in a block - lib\features\profile\profile_screen.dart:31:7 - curly_braces_in_flow_control_structures
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_screen.dart:119:31 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_screen.dart:260:34 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_screen.dart:261:38 - prefer_const_constructors
+

@@ -1,0 +1,24 @@
+Showing outdated packages.
+[*] indicates versions that are not the latest available.
+
+Package Name                 Current        Upgradable     Resolvable     Latest  
+
+direct dependencies:        
+dotted_border                *2.1.0         *2.1.0         *2.1.0         3.1.0   
+flutter_html                 *3.0.0-beta.2  *3.0.0-beta.2  *3.0.0-beta.2  3.0.0   
+flutter_local_notifications  *19.5.0        *19.5.0        *19.5.0        20.1.0  
+flutter_map                  *7.0.2         *7.0.2         *7.0.2         8.2.2   
+geolocator                   *13.0.2        *13.0.2        *13.0.2        14.0.2  
+google_fonts                 *6.3.0         *6.3.0         *6.3.0         8.0.2   
+google_maps_flutter          *2.10.1        *2.10.1        *2.10.1        2.14.2  
+shared_preferences           *2.3.3         *2.3.3         *2.3.3         2.5.4   
+url_launcher                 *6.3.1         *6.3.1         *6.3.1         6.3.2   
+
+dev_dependencies:           
+flutter_lints                *3.0.2         *3.0.2         *4.0.0         6.0.0   
+
+1 dependency is constrained to a version that is older than a resolvable version.
+To update it, edit pubspec.yaml, or run `flutter pub upgrade --major-versions`.
+
+js
+    Package js has been discontinued. See https://dart.dev/go/package-discontinue

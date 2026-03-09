@@ -1,0 +1,231 @@
+/* 📱 CATEGORIES PAGE - RESPONSIVE FIX */
+
+/* ============================================ */
+/* 1. PREVENT HORIZONTAL OVERFLOW */
+/* ============================================ */
+
+.products-page {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+.table-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+}
+
+.data-table {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-collapse: collapse;
+    table-layout: fixed !important;
+}
+
+/* FIX: Constrain image column width */
+.data-table td:first-child,
+.data-table th:first-child {
+    width: 120px !important;
+    max-width: 120px !important;
+}
+
+/* FIX: Product images must fit */
+.product-image {
+    width: 80px !important;
+    height: 80px !important;
+    max-width: 80px !important;
+    max-height: 80px !important;
+    overflow: hidden !important;
+}
+
+.product-image img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    object-fit: cover !important;
+    border-radius: 8px;
+}
+
+.placeholder-image {
+    width: 80px !important;
+    height: 80px !important;
+    max-width: 80px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    border-radius: 8px;
+}
+
+/* ============================================ */
+/* 2. MOBILE RESPONSIVE - CARD LAYOUT */
+/* ============================================ */
+
+@media (max-width: 768px) {
+
+    /* Hide table header */
+    .data-table thead {
+        display: none;
+    }
+
+    /* Make table and tbody block */
+    .data-table,
+    .data-table tbody {
+        display: block;
+        width: 100%;
+    }
+
+    /* Make rows look like cards */
+    .data-table tr {
+        display: block;
+        background: white;
+        margin-bottom: 1rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        border: 1px solid #eee;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    /* Make cells flex */
+    .data-table td {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 0 !important;
+        border-bottom: 1px dashed #eee !important;
+        width: 100%;
+    }
+
+    .data-table td:last-child {
+        border-bottom: none !important;
+        padding-top: 1rem !important;
+    }
+
+    /* Add labels */
+    .data-table td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #666;
+        flex: 1;
+        text-align: left;
+    }
+
+    /* Specific labels for Categories page */
+    .data-table td:nth-of-type(1)::before {
+        content: "Image";
+    }
+
+    .data-table td:nth-of-type(2)::before {
+        content: "Name";
+    }
+
+    .data-table td:nth-of-type(3)::before {
+        content: "Created";
+    }
+
+    .data-table td:nth-of-type(4)::before {
+        content: "Actions";
+    }
+
+    /* Image cell - center the image */
+    .data-table td:nth-of-type(1) {
+        justify-content: center;
+        border-bottom: 2px solid #eee !important;
+        padding-bottom: 1rem !important;
+    }
+
+    .data-table td:nth-of-type(1)::before {
+        display: none;
+    }
+
+    /* Product image styling */
+    .product-image {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .product-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    /* Action buttons */
+    .action-buttons {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    /* Empty state */
+    .data-table tr:has(.empty-state) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100px;
+    }
+
+    .empty-state {
+        display: block !important;
+        width: 100%;
+        text-align: center !important;
+        border: none !important;
+        padding: 2rem !important;
+    }
+
+    .empty-state::before {
+        content: none !important;
+        display: none !important;
+    }
+}
+
+/* ============================================ */
+/* 3. HEADER RESPONSIVE */
+/* ============================================ */
+
+@media (max-width: 768px) {
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .add-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .table-actions {
+        width: 100%;
+    }
+}
+
+/* ============================================ */
+/* 4. MODAL RESPONSIVE */
+/* ============================================ */
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95% !important;
+        max-width: 95% !important;
+        margin: 1rem;
+    }
+
+    .modal-footer {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .modal-footer button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,256 @@
+.settlements-container {
+    padding: 24px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.financial-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.stat-card-premium {
+    padding: 24px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.stat-card-premium.gold {
+    background: linear-gradient(135deg, #FFD600 0%, #FFB800 100%);
+    color: #0F172A;
+}
+
+.stat-card-premium.dark {
+    background: #0F172A;
+    color: white;
+}
+
+.stat-card-premium.red {
+    background: white;
+    border: 2px solid #FEF2F2;
+}
+
+.stat-card-premium.red .stat-icon {
+    background: #fee2e2;
+    color: #ef4444;
+}
+
+.stat-card-premium .stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    display: grid;
+    place-items: center;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.stat-info label {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+.stat-info h3 {
+    margin: 4px 0 0;
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+
+.hub-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    background: #f1f5f9;
+    padding: 6px;
+    border-radius: 14px;
+    width: fit-content;
+}
+
+.hub-tabs button {
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    font-weight: 700;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #64748b;
+}
+
+.hub-tabs button.active {
+    background: white;
+    color: #0F172A;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.main-hub-content {
+    padding: 0;
+    overflow: hidden;
+}
+
+.hub-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid #f1f5f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f8fafc;
+    padding: 8px 16px;
+    border-radius: 12px;
+    width: 300px;
+}
+
+.search-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-weight: 600;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.hub-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hub-table th {
+    text-align: left;
+    padding: 16px 24px;
+    background: #f8fafc;
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #94a3b8;
+    text-transform: uppercase;
+}
+
+.hub-table td {
+    padding: 16px 24px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.entity-cell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.entity-cell .avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #FFD600;
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+    color: #0F172A;
+}
+
+.name {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.sub {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+.pill {
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+
+.pill.vendor {
+    background: #ecfdf5;
+    color: #059669;
+}
+
+.pill.rider {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.pill.risk {
+    background: #fef2f2;
+    color: #ef4444;
+}
+
+.amount.bold {
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+}
+
+.amount.red {
+    color: #ef4444;
+}
+
+.event-tag {
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #f1f5f9;
+}
+
+.flow-icon {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 900;
+    font-size: 0.7rem;
+}
+
+.flow-icon.IN {
+    color: #10b981;
+}
+
+.flow-icon.OUT {
+    color: #ef4444;
+}
+
+.btn-clear {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #0f172a;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

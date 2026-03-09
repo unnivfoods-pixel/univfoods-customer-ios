@@ -1,0 +1,10 @@
+>>> [MIGRATE] Hard Merging for phone: 8897868951...
+Orders migrated.
+ADDRESS MIGRATE ERROR: {
+  code: '23505',
+  details: 'Key (user_id, label)=(rrgtG3C1UHgIcBMMtfdSnF2Vxup2, Home) already exists.',
+  hint: null,
+  message: 'duplicate key value violates unique constraint "unique_user_address_title"'
+}
+Profiles cleaned.
+>>> [SUCCESS] User 8897868951 consolidated to master account.

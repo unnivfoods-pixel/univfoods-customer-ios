@@ -1,0 +1,24 @@
+Analyzing profile...                                            
+
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\favorites_screen.dart:139:41 - prefer_const_constructors
+   info - Don't use 'BuildContext's across async gaps - lib\features\profile\legal_consent_screen.dart:103:28 - use_build_context_synchronously
+   info - Statements in an if should be enclosed in a block - lib\features\profile\legal_consent_screen.dart:111:7 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block - lib\features\profile\legal_consent_screen.dart:116:7 - curly_braces_in_flow_control_structures
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\legal_screen.dart:91:15 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\legal_screen.dart:134:24 - prefer_const_constructors
+   info - Unnecessary braces in a string interpolation - lib\features\profile\profile_pages.dart:271:36 - unnecessary_brace_in_string_interps
+   info - Unnecessary braces in a string interpolation - lib\features\profile\profile_pages.dart:271:73 - unnecessary_brace_in_string_interps
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\profile\profile_pages.dart:332:38 - use_build_context_synchronously
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:429:40 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:430:44 - prefer_const_constructors
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\profile\profile_pages.dart:459:56 - use_build_context_synchronously
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:472:29 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:474:40 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:475:44 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_pages.dart:754:30 - prefer_const_constructors
+   info - Unnecessary use of 'toList' in a spread - lib\features\profile\profile_pages.dart:765:18 - unnecessary_to_list_in_spreads
+   info - Statements in an if should be enclosed in a block - lib\features\profile\profile_screen.dart:31:7 - curly_braces_in_flow_control_structures
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_screen.dart:119:31 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_screen.dart:260:34 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - lib\features\profile\profile_screen.dart:261:38 - prefer_const_constructors
+

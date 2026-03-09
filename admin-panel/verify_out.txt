@@ -1,0 +1,10 @@
+>>> [VERIFY] Checking order 3b08e900...
+Order status / order_status: ACCEPTED / ACCEPTED
+Customer ID: rrgtG3C1UHgIcBMMtfdSnF2Vxup2
+Tracking view order_status: ACCEPTED customer_id: rrgtG3C1UHgIcBMMtfdSnF2Vxup2
+Status already in sync: ACCEPTED
+
+Testing update_order_status_v3 RPC...
+RPC OK - Status set to ACCEPTED
+AFTER RPC - status: ACCEPTED order_status: ACCEPTED
+TRACKING VIEW AFTER: ACCEPTED

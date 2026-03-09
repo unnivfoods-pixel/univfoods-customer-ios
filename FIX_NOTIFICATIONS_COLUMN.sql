@@ -1,0 +1,1 @@
+ALTER TABLE public.notifications ADD COLUMN IF NOT EXISTS user_role TEXT DEFAULT 'CUSTOMER';

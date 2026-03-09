@@ -1,0 +1,6 @@
+Analyzing product_details_screen.dart...                        
+
+   info - Use 'const' with the constructor to improve performance - customer_app\lib\features\menu\product_details_screen.dart:265:35 - prefer_const_constructors
+   info - Use 'const' with the constructor to improve performance - customer_app\lib\features\menu\product_details_screen.dart:266:46 - prefer_const_constructors
+   info - A value for optional parameter 'urlColor' isn't ever given - customer_app\lib\features\menu\product_details_screen.dart:421:13 - unused_element
+

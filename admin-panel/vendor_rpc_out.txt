@@ -1,0 +1,21 @@
+{
+  "id": "b856cc2a-9e99-4eeb-8dd0-c912c9b86a3f",
+  "name": "Curry Station (b856cc2a)",
+  "cuisine_type": "Multi Cuisine",
+  "rating": 5,
+  "banner_url": "https://dxqcruvarqgnscenixzf.supabase.co/storage/v1/object/public/images/vendors/1772453530101-yb5nw6un0e.webp",
+  "logo_url": null,
+  "address": "near school",
+  "distance_km": 2.06192084020481,
+  "delivery_time": "30-45 min",
+  "is_pure_veg": false,
+  "has_offers": true,
+  "price_for_two": 250,
+  "status": "ONLINE",
+  "is_open": true,
+  "open_time": "09:00",
+  "close_time": "22:00",
+  "is_busy": false,
+  "latitude": 9.5126,
+  "longitude": 77.6335
+}

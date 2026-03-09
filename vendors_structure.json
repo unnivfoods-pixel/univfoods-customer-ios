@@ -1,0 +1,7 @@
+Checking vendors table structure...
+Error response for empty insert: {
+  "code": "23502",
+  "details": "Failing row contains (80bc8ca9-deea-4985-87ed-547a44b79b6a, 2026-03-04 14:40:00.194648+00, null, null, null, null, null, null, 0, 0, 5.0, Active, 0, null, 2026-03-04 14:40:00.194648, null, null, null, 15.0, Weekly, f, 0.0, 0.0, Multi Cuisine, null, 30-45 min, null, f, f, f, {}, null, 0.0, null, f, 15, null, null, null, 200, f, t, f, null, 0, 10.0, f, null, PENDING, t, 250, 15, null, null, null).",
+  "hint": null,
+  "message": "null value in column \"shop_name\" of relation \"vendors\" violates not-null constraint"
+}

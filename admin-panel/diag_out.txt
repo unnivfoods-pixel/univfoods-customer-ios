@@ -1,0 +1,11 @@
+>>> [DIAGNOSTIC] Checking Realtime Configuration...
+LATEST ORDERS: [
+  { id: '2131649a-2a39-425c-b159-8ae437cfc03e', status: 'CANCELLED' },
+  { id: '5cf0b913-4110-43e9-8a4e-2713ba1655e0', status: 'Pending' },
+  { id: '24c074cd-fc11-42b2-9958-cc592b845fd2', status: 'ON_THE_WAY' },
+  { id: 'c5b9d7c9-d827-4a81-a149-b1806a634cc4', status: 'DELIVERED' },
+  { id: '908b4ab9-1e67-4f17-938e-00e41a66ee24', status: 'Pending' }
+]
+ATTEMPTING TRIGGER UPDATE ON: 2131649a-2a39-425c-b159-8ae437cfc03e
+UPDATE SUCCESS! Realtime event should have fired.
+Checking Publication Status (requires exec_sql, skipping raw SQL check)

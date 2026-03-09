@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "univfoods-967a6"
+  },
+  "targets": {
+    "univfoods-967a6": {
+      "hosting": {
+        "univfoods": [
+          "univfoods-967a6"
+        ],
+        "univfoods-admin": [
+          "univfoods-admin-panel-3970d"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

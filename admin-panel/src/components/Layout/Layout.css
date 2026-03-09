@@ -1,0 +1,112 @@
+.app-container {
+    display: flex;
+    height: 100vh;
+    /* Changed from min-height to height for fixed layout */
+    background-color: var(--bg-body);
+    overflow: hidden;
+    /* Prevent body scroll, use inner scrolls */
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 280px;
+    padding: 0;
+    height: 100vh;
+    overflow-y: auto;
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    background-image: radial-gradient(circle at 100% 0%, rgba(255, 214, 0, 0.05) 0%, transparent 40%);
+}
+
+@media (max-width: 1024px) {
+    .main-content {
+        margin-left: 0;
+        padding-bottom: 80px;
+    }
+}
+
+.mobile-header {
+    display: none;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.2rem 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-blur: blur(20px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 90;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+@media (max-width: 1024px) {
+    .mobile-header {
+        display: flex;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+.menu-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--text-main);
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.menu-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.mobile-logo {
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #1B5E20;
+    letter-spacing: -0.04em;
+}
+
+.mobile-logo span {
+    color: #FFD600;
+}
+
+.toast-notification {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    /* Glass fallback */
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+    min-width: 300px;
+}
+
+.toast-icon {
+    width: 44px;
+    height: 44px;
+    background: #FFD600;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(255, 214, 0, 0.3);
+    color: #1B5E20;
+}
+
+.toast-content h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+    color: var(--text-main);
+}
+
+.toast-content p {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}

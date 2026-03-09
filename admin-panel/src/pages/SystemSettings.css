@@ -1,0 +1,135 @@
+.settings-page {
+    padding: 40px;
+}
+
+@media (max-width: 1024px) {
+    .settings-page {
+        padding: 16px;
+    }
+}
+
+.settings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+@media (max-width: 640px) {
+    .settings-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+.settings-card {
+    padding: 40px;
+}
+
+@media (max-width: 640px) {
+    .settings-card {
+        padding: 24px;
+    }
+}
+
+.settings-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+@media (max-width: 640px) {
+    .settings-card-header {
+        margin-bottom: 24px;
+    }
+}
+
+.settings-input-group {
+    display: grid;
+    gap: 20px;
+}
+
+@media (max-width: 640px) {
+    .settings-input-group {
+        gap: 16px;
+    }
+}
+
+.settings-toggle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-radius: 14px;
+    background: #f8fafc;
+}
+
+@media (max-width: 640px) {
+    .settings-toggle-row {
+        padding: 12px;
+    }
+}
+
+.danger-zone {
+    border: 2px solid #fee2e2;
+}
+
+.maintenance-active {
+    background: #fff1f2 !important;
+}
+
+.btn-deploy {
+    background: #FFD600;
+    color: #0F172A;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 18px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    box-shadow: 0 15px 30px rgba(255, 214, 0, 0.25);
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+@media (max-width: 640px) {
+    .btn-deploy {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 24px;
+    }
+}
+
+.settings-label {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #94a3b8;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.settings-input {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 14px;
+    border: 2px solid #f1f5f9;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0f172a;
+    background: white;
+    transition: border-color 0.2s;
+}
+
+.settings-input:focus {
+    border-color: #FFD600;
+}
+
+.settings-toggle {
+    width: 44px;
+    height: 24px;
+    cursor: pointer;
+}

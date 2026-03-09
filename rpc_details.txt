@@ -1,0 +1,957 @@
+/rpc/st_linetocurve
+  Param: args
+  Param: undefined
+/rpc/update_order_status_v16
+  Param: args
+  Param: undefined
+/rpc/st_swapordinates
+  Param: args
+  Param: undefined
+/rpc/is_admin
+  Param: args
+  Param: undefined
+/rpc/postgis_libprotobuf_version
+  Param: args
+  Param: undefined
+/rpc/st_wrapx
+  Param: args
+  Param: undefined
+/rpc/st_quantizecoordinates
+  Param: args
+  Param: undefined
+/rpc/st_closestpoint
+  Param: args
+  Param: undefined
+/rpc/st_linelocatepoint
+  Param: args
+  Param: undefined
+/rpc/st_maximuminscribedcircle
+  Param: args
+  Param: undefined
+/rpc/st_collect
+  Param: args
+  Param: undefined
+/rpc/st_distance
+  Param: args
+  Param: undefined
+/rpc/st_multipointfromwkb
+  Param: args
+  Param: undefined
+/rpc/st_srid
+  Param: args
+  Param: undefined
+/rpc/finalize_payment_stabilized_v1
+  Param: args
+  Param: undefined
+/rpc/longtransactionsenabled
+  Param: args
+  Param: undefined
+/rpc/st_letters
+  Param: args
+  Param: undefined
+/rpc/st_buffer
+  Param: args
+  Param: undefined
+/rpc/unlockrows
+  Param: args
+  Param: undefined
+/rpc/pickup_order_v1
+  Param: args
+  Param: undefined
+/rpc/geometry_overbelow
+  Param: args
+  Param: undefined
+/rpc/st_azimuth
+  Param: args
+  Param: undefined
+/rpc/st_scale
+  Param: args
+  Param: undefined
+/rpc/_st_3dintersects
+  Param: args
+  Param: undefined
+/rpc/st_delaunaytriangles
+  Param: args
+  Param: undefined
+/rpc/get_nearby_vendors_v2
+  Param: args
+  Param: undefined
+/rpc/st_voronoilines
+  Param: args
+  Param: undefined
+/rpc/process_refund
+  Param: args
+  Param: undefined
+/rpc/_st_contains
+  Param: args
+  Param: undefined
+/rpc/dropgeometrytable
+  Param: args
+  Param: undefined
+/rpc/addauth
+  Param: args
+  Param: undefined
+/rpc/st_expand
+  Param: args
+  Param: undefined
+/rpc/_st_touches
+  Param: args
+  Param: undefined
+/rpc/st_makebox2d
+  Param: args
+  Param: undefined
+/rpc/get_nearby_vendors_v3
+  Param: args
+  Param: undefined
+/rpc/st_pointzm
+  Param: args
+  Param: undefined
+/rpc/geometry_distance_box
+  Param: args
+  Param: undefined
+/rpc/postgis_lib_revision
+  Param: args
+  Param: undefined
+/rpc/st_triangulatepolygon
+  Param: args
+  Param: undefined
+/rpc/geometry_gt
+  Param: args
+  Param: undefined
+/rpc/geometry_distance_centroid
+  Param: args
+  Param: undefined
+/rpc/st_geometricmedian
+  Param: args
+  Param: undefined
+/rpc/update_rider_location_stabilized_v1
+  Param: args
+  Param: undefined
+/rpc/_st_covers
+  Param: args
+  Param: undefined
+/rpc/st_pointm
+  Param: args
+  Param: undefined
+/rpc/get_nearby_vendors_v4
+  Param: args
+  Param: undefined
+/rpc/st_frechetdistance
+  Param: args
+  Param: undefined
+/rpc/st_geometryfromtext
+  Param: args
+  Param: undefined
+/rpc/st_offsetcurve
+  Param: args
+  Param: undefined
+/rpc/st_geomfromewkt
+  Param: args
+  Param: undefined
+/rpc/postgis_proj_version
+  Param: args
+  Param: undefined
+/rpc/disablelongtransactions
+  Param: args
+  Param: undefined
+/rpc/st_gmltosql
+  Param: args
+  Param: undefined
+/rpc/geometry_below
+  Param: args
+  Param: undefined
+/rpc/approve_vendor_v6
+  Param: args
+  Param: undefined
+/rpc/complete_delivery_mission
+  Param: args
+  Param: undefined
+/rpc/st_minimumboundingcircle
+  Param: args
+  Param: undefined
+/rpc/postgis_extensions_upgrade
+  Param: args
+  Param: undefined
+/rpc/st_multilinestringfromtext
+  Param: args
+  Param: undefined
+/rpc/get_nearby_vendors_v5
+  Param: args
+  Param: undefined
+/rpc/_st_sortablehash
+  Param: args
+  Param: undefined
+/rpc/geometry_cmp
+  Param: args
+  Param: undefined
+/rpc/geometry_same_3d
+  Param: args
+  Param: undefined
+/rpc/st_isvaliddetail
+  Param: args
+  Param: undefined
+/rpc/st_polyfromtext
+  Param: args
+  Param: undefined
+/rpc/st_squaregrid
+  Param: args
+  Param: undefined
+/rpc/st_geomfromgml
+  Param: args
+  Param: undefined
+/rpc/_st_longestline
+  Param: args
+  Param: undefined
+/rpc/st_aslatlontext
+  Param: args
+  Param: undefined
+/rpc/st_distancespheroid
+  Param: args
+  Param: undefined
+/rpc/geometry_lt
+  Param: args
+  Param: undefined
+/rpc/_postgis_deprecate
+  Param: args
+  Param: undefined
+/rpc/st_assvg
+  Param: args
+  Param: undefined
+/rpc/deliver_order_v1
+  Param: args
+  Param: undefined
+/rpc/get_nearby_vendors_v7
+  Param: args
+  Param: undefined
+/rpc/dropgeometrycolumn
+  Param: args
+  Param: undefined
+/rpc/st_dwithin
+  Param: args
+  Param: undefined
+/rpc/find_nearest_riders
+  Param: args
+  Param: undefined
+/rpc/st_3dclosestpoint
+  Param: args
+  Param: undefined
+/rpc/st_asmvtgeom
+  Param: args
+  Param: undefined
+/rpc/st_orderingequals
+  Param: args
+  Param: undefined
+/rpc/log_cod_mismatch
+  Param: args
+  Param: undefined
+/rpc/st_snaptogrid
+  Param: args
+  Param: undefined
+/rpc/approve_partner_v7
+  Param: args
+  Param: undefined
+/rpc/st_polygonfromwkb
+  Param: args
+  Param: undefined
+/rpc/postgis_lib_version
+  Param: args
+  Param: undefined
+/rpc/place_order_stabilized_v1
+  Param: args
+  Param: undefined
+/rpc/update_order_status_v3
+  Param: args
+  Param: undefined
+/rpc/st_disjoint
+  Param: args
+  Param: undefined
+/rpc/st_union
+  Param: args
+  Param: undefined
+/rpc/st_coveredby
+  Param: args
+  Param: undefined
+/rpc/st_containsproperly
+  Param: args
+  Param: undefined
+/rpc/_st_overlaps
+  Param: args
+  Param: undefined
+/rpc/_st_maxdistance
+  Param: args
+  Param: undefined
+/rpc/update_rider_location_v3
+  Param: args
+  Param: undefined
+/rpc/postgis_scripts_released
+  Param: args
+  Param: undefined
+/rpc/st_asencodedpolyline
+  Param: args
+  Param: undefined
+/rpc/st_astext
+  Param: args
+  Param: undefined
+/rpc/st_intersection
+  Param: args
+  Param: undefined
+/rpc/st_square
+  Param: args
+  Param: undefined
+/rpc/st_contains
+  Param: args
+  Param: undefined
+/rpc/st_multilinefromwkb
+  Param: args
+  Param: undefined
+/rpc/st_difference
+  Param: args
+  Param: undefined
+/rpc/st_curvetoline
+  Param: args
+  Param: undefined
+/rpc/st_minimumboundingradius
+  Param: args
+  Param: undefined
+/rpc/migrate_guest_orders_v4
+  Param: args
+  Param: undefined
+/rpc/st_geomfromwkb
+  Param: args
+  Param: undefined
+/rpc/postgis_full_version
+  Param: args
+  Param: undefined
+/rpc/geomfromewkb
+  Param: args
+  Param: undefined
+/rpc/st_linestringfromwkb
+  Param: args
+  Param: undefined
+/rpc/migrate_guest_orders_v5
+  Param: args
+  Param: undefined
+/rpc/st_mpointfromwkb
+  Param: args
+  Param: undefined
+/rpc/st_covers
+  Param: args
+  Param: undefined
+/rpc/_st_dfullywithin
+  Param: args
+  Param: undefined
+/rpc/st_addpoint
+  Param: args
+  Param: undefined
+/rpc/postgis_scripts_installed
+  Param: args
+  Param: undefined
+/rpc/st_concavehull
+  Param: args
+  Param: undefined
+/rpc/_st_equals
+  Param: args
+  Param: undefined
+/rpc/get_nearby_vendors
+  Param: args
+  Param: undefined
+/rpc/verify_and_create_order
+  Param: args
+  Param: undefined
+/rpc/send_campaign
+  Param: args
+  Param: undefined
+/rpc/geometry_eq
+  Param: args
+  Param: undefined
+/rpc/postgis_liblwgeom_version
+  Param: args
+  Param: undefined
+/rpc/st_makeline
+  Param: args
+  Param: undefined
+/rpc/confirm_order_payment
+  Param: args
+  Param: undefined
+/rpc/st_linecrossingdirection
+  Param: args
+  Param: undefined
+/rpc/geometry_overleft
+  Param: args
+  Param: undefined
+/rpc/st_maxdistance
+  Param: args
+  Param: undefined
+/rpc/st_angle
+  Param: args
+  Param: undefined
+/rpc/postgis_transform_geometry
+  Param: args
+  Param: undefined
+/rpc/postgis_type_name
+  Param: args
+  Param: undefined
+/rpc/can_refund_order
+  Param: args
+  Param: undefined
+/rpc/_st_3ddwithin
+  Param: args
+  Param: undefined
+/rpc/st_asewkt
+  Param: args
+  Param: undefined
+/rpc/st_geomcollfromtext
+  Param: args
+  Param: undefined
+/rpc/accept_order_v1
+  Param: args
+  Param: undefined
+/rpc/st_3dmakebox
+  Param: args
+  Param: undefined
+/rpc/st_symmetricdifference
+  Param: args
+  Param: undefined
+/rpc/geometry_same
+  Param: args
+  Param: undefined
+/rpc/st_simplifypolygonhull
+  Param: args
+  Param: undefined
+/rpc/st_removerepeatedpoints
+  Param: args
+  Param: undefined
+/rpc/st_mlinefromtext
+  Param: args
+  Param: undefined
+/rpc/st_3dlongestline
+  Param: args
+  Param: undefined
+/rpc/geometry_gist_same_2d
+  Param: args
+  Param: undefined
+/rpc/st_force3dz
+  Param: args
+  Param: undefined
+/rpc/create_payment_intent
+  Param: args
+  Param: undefined
+/rpc/geometry_left
+  Param: args
+  Param: undefined
+/rpc/st_length
+  Param: args
+  Param: undefined
+/rpc/postgis_libxml_version
+  Param: args
+  Param: undefined
+/rpc/update_rider_location
+  Param: args
+  Param: undefined
+/rpc/st_touches
+  Param: args
+  Param: undefined
+/rpc/get_nearby_vendors_v18
+  Param: args
+  Param: undefined
+/rpc/st_linefromwkb
+  Param: args
+  Param: undefined
+/rpc/driver_deposit_cod
+  Param: args
+  Param: undefined
+/rpc/get_nearby_vendors_v21
+  Param: args
+  Param: undefined
+/rpc/update_order_instructions_v3
+  Param: args
+  Param: undefined
+/rpc/_st_orderingequals
+  Param: args
+  Param: undefined
+/rpc/st_mlinefromwkb
+  Param: args
+  Param: undefined
+/rpc/_st_voronoi
+  Param: args
+  Param: undefined
+/rpc/st_overlaps
+  Param: args
+  Param: undefined
+/rpc/updategeometrysrid
+  Param: args
+  Param: undefined
+/rpc/_st_intersects
+  Param: args
+  Param: undefined
+/rpc/_st_containsproperly
+  Param: args
+  Param: undefined
+/rpc/get_nearby_vendors_v20
+  Param: args
+  Param: undefined
+/rpc/st_perimeter
+  Param: args
+  Param: undefined
+/rpc/equals
+  Param: args
+  Param: undefined
+/rpc/_st_linecrossingdirection
+  Param: args
+  Param: undefined
+/rpc/st_asgeojson
+  Param: args
+  Param: undefined
+/rpc/verify_delivery_otp
+  Param: args
+  Param: undefined
+/rpc/st_hausdorffdistance
+  Param: args
+  Param: undefined
+/rpc/st_normalize
+  Param: args
+  Param: undefined
+/rpc/postgis_version
+  Param: args
+  Param: undefined
+/rpc/st_wkttosql
+  Param: args
+  Param: undefined
+/rpc/st_locatebetween
+  Param: args
+  Param: undefined
+/rpc/st_crosses
+  Param: args
+  Param: undefined
+/rpc/geometry_overabove
+  Param: args
+  Param: undefined
+/rpc/place_order_v9
+  Param: args
+  Param: undefined
+/rpc/st_geomfromewkb
+  Param: args
+  Param: undefined
+/rpc/migrate_guest_orders
+  Param: args
+  Param: undefined
+/rpc/st_geomfromkml
+  Param: args
+  Param: undefined
+/rpc/st_hexagongrid
+  Param: args
+  Param: undefined
+/rpc/geometry_ge
+  Param: args
+  Param: undefined
+/rpc/postgis_scripts_build_date
+  Param: args
+  Param: undefined
+/rpc/st_area
+  Param: args
+  Param: undefined
+/rpc/geometry_contains
+  Param: args
+  Param: undefined
+/rpc/st_geomfromgeojson
+  Param: args
+  Param: undefined
+/rpc/st_pointz
+  Param: args
+  Param: undefined
+/rpc/assign_rider_v1
+  Param: args
+  Param: undefined
+/rpc/get_nearby_vendors_v22
+  Param: args
+  Param: undefined
+/rpc/geometry_overright
+  Param: args
+  Param: undefined
+/rpc/check_rider_gps_health
+  Param: args
+  Param: undefined
+/rpc/st_pointfromwkb
+  Param: args
+  Param: undefined
+/rpc/st_locatealong
+  Param: args
+  Param: undefined
+/rpc/validate_order_radius
+  Param: args
+  Param: undefined
+/rpc/st_dfullywithin
+  Param: args
+  Param: undefined
+/rpc/st_polyfromwkb
+  Param: args
+  Param: undefined
+/rpc/st_mpolyfromwkb
+  Param: args
+  Param: undefined
+/rpc/st_segmentize
+  Param: args
+  Param: undefined
+/rpc/st_askml
+  Param: args
+  Param: undefined
+/rpc/geometry
+  Param: args
+  Param: undefined
+/rpc/st_equals
+  Param: args
+  Param: undefined
+/rpc/addgeometrycolumn
+  Param: args
+  Param: undefined
+/rpc/st_geohash
+  Param: args
+  Param: undefined
+/rpc/st_distancesphere
+  Param: args
+  Param: undefined
+/rpc/st_project
+  Param: args
+  Param: undefined
+/rpc/st_multipointfromtext
+  Param: args
+  Param: undefined
+/rpc/geography
+  Param: args
+  Param: undefined
+/rpc/st_asmarc21
+  Param: args
+  Param: undefined
+/rpc/st_polygonfromtext
+  Param: args
+  Param: undefined
+/rpc/st_centroid
+  Param: args
+  Param: undefined
+/rpc/st_force3d
+  Param: args
+  Param: undefined
+/rpc/st_linefromtext
+  Param: args
+  Param: undefined
+/rpc/st_within
+  Param: args
+  Param: undefined
+/rpc/st_point
+  Param: args
+  Param: undefined
+/rpc/update_delivery_location_v16
+  Param: args
+  Param: undefined
+/rpc/geometry_contains_3d
+  Param: args
+  Param: undefined
+/rpc/admin_override_status
+  Param: args
+  Param: undefined
+/rpc/_st_crosses
+  Param: args
+  Param: undefined
+/rpc/find_and_assign_rider
+  Param: args
+  Param: undefined
+/rpc/st_generatepoints
+  Param: args
+  Param: undefined
+/rpc/st_3ddistance
+  Param: args
+  Param: undefined
+/rpc/st_geomfrommarc21
+  Param: args
+  Param: undefined
+/rpc/gettransactionid
+  Param: args
+  Param: undefined
+/rpc/_st_3ddfullywithin
+  Param: args
+  Param: undefined
+/rpc/geometry_within
+  Param: args
+  Param: undefined
+/rpc/geometry_le
+  Param: args
+  Param: undefined
+/rpc/st_multipolygonfromtext
+  Param: args
+  Param: undefined
+/rpc/postgis_geos_version
+  Param: args
+  Param: undefined
+/rpc/st_geographyfromtext
+  Param: args
+  Param: undefined
+/rpc/st_astwkb
+  Param: args
+  Param: undefined
+/rpc/st_force4d
+  Param: args
+  Param: undefined
+/rpc/st_hasarc
+  Param: args
+  Param: undefined
+/rpc/set_current_user
+  Param: args
+  Param: undefined
+/rpc/postgis_constraint_dims
+  Param: args
+  Param: undefined
+/rpc/st_force3dm
+  Param: args
+  Param: undefined
+/rpc/place_order_v3
+  Param: args
+  Param: undefined
+/rpc/st_clipbybox2d
+  Param: args
+  Param: undefined
+/rpc/admin_toggle_vendor
+  Param: args
+  Param: undefined
+/rpc/geometry_overlaps
+  Param: args
+  Param: undefined
+/rpc/st_asgml
+  Param: args
+  Param: undefined
+/rpc/st_reduceprecision
+  Param: args
+  Param: undefined
+/rpc/st_geomcollfromwkb
+  Param: args
+  Param: undefined
+/rpc/st_geomfromtext
+  Param: args
+  Param: undefined
+/rpc/add_order_tip_v3
+  Param: args
+  Param: undefined
+/rpc/get_user_bootstrap_data
+  Param: args
+  Param: undefined
+/rpc/is_admin_strict
+  Param: args
+  Param: undefined
+/rpc/st_unaryunion
+  Param: args
+  Param: undefined
+/rpc/postgis_constraint_type
+  Param: args
+  Param: undefined
+/rpc/st_node
+  Param: args
+  Param: undefined
+/rpc/st_geomfromtwkb
+  Param: args
+  Param: undefined
+/rpc/st_tileenvelope
+  Param: args
+  Param: undefined
+/rpc/place_order_v2
+  Param: args
+  Param: undefined
+/rpc/st_intersects
+  Param: args
+  Param: undefined
+/rpc/st_voronoipolygons
+  Param: args
+  Param: undefined
+/rpc/geometry_right
+  Param: args
+  Param: undefined
+/rpc/st_asx3d
+  Param: args
+  Param: undefined
+/rpc/st_snap
+  Param: args
+  Param: undefined
+/rpc/postgis_constraint_srid
+  Param: args
+  Param: undefined
+/rpc/_postgis_selectivity
+  Param: args
+  Param: undefined
+/rpc/populate_geometry_columns
+  Param: args
+  Param: undefined
+/rpc/st_3ddwithin
+  Param: args
+  Param: undefined
+/rpc/st_longestline
+  Param: args
+  Param: undefined
+/rpc/st_lineinterpolatepoints
+  Param: args
+  Param: undefined
+/rpc/st_3dshortestline
+  Param: args
+  Param: undefined
+/rpc/st_3dintersects
+  Param: args
+  Param: undefined
+/rpc/geometry_contained_3d
+  Param: args
+  Param: undefined
+/rpc/verify_pickup_otp
+  Param: args
+  Param: undefined
+/rpc/generate_otp
+  Param: args
+  Param: undefined
+/rpc/st_sharedpaths
+  Param: args
+  Param: undefined
+/rpc/_st_dwithin
+  Param: args
+  Param: undefined
+/rpc/update_rider_position
+  Param: args
+  Param: undefined
+/rpc/_postgis_pgsql_version
+  Param: args
+  Param: undefined
+/rpc/st_mpointfromtext
+  Param: args
+  Param: undefined
+/rpc/postgis_libjson_version
+  Param: args
+  Param: undefined
+/rpc/geometry_above
+  Param: args
+  Param: undefined
+/rpc/st_3dmaxdistance
+  Param: args
+  Param: undefined
+/rpc/st_locatebetweenelevations
+  Param: args
+  Param: undefined
+/rpc/st_interpolatepoint
+  Param: args
+  Param: undefined
+/rpc/st_split
+  Param: args
+  Param: undefined
+/rpc/place_order_v7
+  Param: args
+  Param: undefined
+/rpc/st_relate
+  Param: args
+  Param: undefined
+/rpc/st_transform
+  Param: args
+  Param: undefined
+/rpc/st_makevalid
+  Param: args
+  Param: undefined
+/rpc/st_symdifference
+  Param: args
+  Param: undefined
+/rpc/st_geogfromwkb
+  Param: args
+  Param: undefined
+/rpc/st_wkbtosql
+  Param: args
+  Param: undefined
+/rpc/st_boundingdiagonal
+  Param: args
+  Param: undefined
+/rpc/st_forcesfs
+  Param: args
+  Param: undefined
+/rpc/postgis_lib_build_date
+  Param: args
+  Param: undefined
+/rpc/verify_order_otp_v5
+  Param: args
+  Param: undefined
+/rpc/geomfromewkt
+  Param: args
+  Param: undefined
+/rpc/st_subdivide
+  Param: args
+  Param: undefined
+/rpc/place_order_v6
+  Param: args
+  Param: undefined
+/rpc/find_eligible_riders
+  Param: args
+  Param: undefined
+/rpc/_st_coveredby
+  Param: args
+  Param: undefined
+/rpc/st_shortestline
+  Param: args
+  Param: undefined
+/rpc/get_nearby_vendors_v16
+  Param: args
+  Param: undefined
+/rpc/_st_within
+  Param: args
+  Param: undefined
+/rpc/st_setsrid
+  Param: args
+  Param: undefined
+/rpc/_postgis_scripts_pgsql_version
+  Param: args
+  Param: undefined
+/rpc/st_linefromencodedpolyline
+  Param: args
+  Param: undefined
+/rpc/st_multipolyfromwkb
+  Param: args
+  Param: undefined
+/rpc/st_mpolyfromtext
+  Param: args
+  Param: undefined
+/rpc/place_order_v5
+  Param: args
+  Param: undefined
+/rpc/update_order_tracking_v1
+  Param: args
+  Param: undefined
+/rpc/enablelongtransactions
+  Param: args
+  Param: undefined
+/rpc/st_geogfromtext
+  Param: args
+  Param: undefined
+/rpc/get_or_create_order_support_v3
+  Param: args
+  Param: undefined
+/rpc/st_hexagon
+  Param: args
+  Param: undefined
+/rpc/_postgis_stats
+  Param: args
+  Param: undefined
+/rpc/st_coorddim
+  Param: args
+  Param: undefined
+/rpc/get_nearby_vendors_v17
+  Param: args
+  Param: undefined
+/rpc/st_3ddfullywithin
+  Param: args
+  Param: undefined
+/rpc/postgis_wagyu_version
+  Param: args
+  Param: undefined
+/rpc/geometry_overlaps_3d
+  Param: args
+  Param: undefined
+/rpc/_postgis_index_extent
+  Param: args
+  Param: undefined
+/rpc/postgis_svn_version
+  Param: args
+  Param: undefined
+/rpc/place_order_v4
+  Param: args
+  Param: undefined
+/rpc/st_pointfromtext
+  Param: args
+  Param: undefined

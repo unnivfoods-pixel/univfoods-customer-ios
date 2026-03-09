@@ -1,0 +1,879 @@
+{
+  "vendors": {
+    "description": "Real-time enabled for customer home screen sorting and filtering.",
+    "required": [
+      "id",
+      "created_at",
+      "shop_name"
+    ],
+    "properties": {
+      "id": {
+        "default": "gen_random_uuid()",
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "text",
+        "type": "string"
+      },
+      "created_at": {
+        "default": "timezone('utc'::text, now())",
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "shop_name": {
+        "format": "text",
+        "type": "string"
+      },
+      "address": {
+        "format": "text",
+        "type": "string"
+      },
+      "phone": {
+        "format": "text",
+        "type": "string"
+      },
+      "manager": {
+        "format": "text",
+        "type": "string"
+      },
+      "open_time": {
+        "format": "text",
+        "type": "string"
+      },
+      "close_time": {
+        "format": "text",
+        "type": "string"
+      },
+      "lat": {
+        "default": 0,
+        "format": "double precision",
+        "type": "number"
+      },
+      "lng": {
+        "default": 0,
+        "format": "double precision",
+        "type": "number"
+      },
+      "rating": {
+        "default": 5,
+        "format": "numeric",
+        "type": "number"
+      },
+      "status": {
+        "default": "Active",
+        "format": "text",
+        "type": "string"
+      },
+      "review_count": {
+        "default": 0,
+        "format": "integer",
+        "type": "integer"
+      },
+      "owner_id": {
+        "format": "text",
+        "type": "string"
+      },
+      "date_created": {
+        "default": "now()",
+        "format": "timestamp without time zone",
+        "type": "string"
+      },
+      "banner_url": {
+        "description": "Wide banner image for restaurant page",
+        "format": "text",
+        "type": "string"
+      },
+      "sub_banner_url": {
+        "description": "Secondary promotional banner",
+        "format": "text",
+        "type": "string"
+      },
+      "gallery_images": {
+        "description": "Array of image URLs for the gallery carousel",
+        "format": "text[]",
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "commission_rate": {
+        "default": 15,
+        "format": "numeric",
+        "type": "number"
+      },
+      "payout_cycle": {
+        "default": "Weekly",
+        "format": "text",
+        "type": "string"
+      },
+      "is_verified": {
+        "default": false,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "wallet_balance": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "min_order_value": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "cuisine_type": {
+        "default": "Multi Cuisine",
+        "format": "text",
+        "type": "string"
+      },
+      "image_url": {
+        "format": "text",
+        "type": "string"
+      },
+      "delivery_time": {
+        "default": "30-45 min",
+        "format": "text",
+        "type": "string"
+      },
+      "zone_id": {
+        "format": "uuid",
+        "type": "string"
+      },
+      "is_trending": {
+        "default": false,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "is_top_rated": {
+        "default": false,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "is_pure_veg": {
+        "default": false,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "tags": {
+        "format": "text[]",
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "email": {
+        "format": "text",
+        "type": "string"
+      },
+      "total_earnings": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "fcm_token": {
+        "format": "text",
+        "type": "string"
+      },
+      "is_approved": {
+        "default": false,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "avg_prep_time": {
+        "default": 15,
+        "format": "integer",
+        "type": "integer"
+      },
+      "upi_id": {
+        "format": "text",
+        "type": "string"
+      },
+      "bank_account_number": {
+        "format": "text",
+        "type": "string"
+      },
+      "bank_ifsc": {
+        "format": "text",
+        "type": "string"
+      },
+      "cost_for_two": {
+        "default": 200,
+        "format": "integer",
+        "type": "integer"
+      },
+      "is_promoted": {
+        "default": false,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "is_active": {
+        "default": true,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "has_offers": {
+        "default": false,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "location": {
+        "format": "public.geography(Point,4326)",
+        "type": "string"
+      },
+      "pending_payout": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "delivery_radius_km": {
+        "default": 10,
+        "format": "numeric",
+        "type": "number"
+      },
+      "is_busy": {
+        "default": false,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "logo_url": {
+        "format": "text",
+        "type": "string"
+      },
+      "approval_status": {
+        "default": "PENDING",
+        "format": "text",
+        "type": "string"
+      },
+      "is_open": {
+        "default": true,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "price_for_two": {
+        "default": 250,
+        "format": "numeric",
+        "type": "number"
+      },
+      "radius_km": {
+        "default": 15,
+        "format": "double precision",
+        "type": "number"
+      },
+      "name": {
+        "format": "text",
+        "type": "string"
+      },
+      "latitude": {
+        "format": "double precision",
+        "type": "number"
+      },
+      "longitude": {
+        "format": "double precision",
+        "type": "number"
+      }
+    },
+    "type": "object"
+  },
+  "orders": {
+    "required": [
+      "id",
+      "created_at",
+      "total"
+    ],
+    "properties": {
+      "id": {
+        "default": "gen_random_uuid()",
+        "description": "Note:\nThis is a Primary Key.<pk/>",
+        "format": "text",
+        "type": "string"
+      },
+      "created_at": {
+        "default": "timezone('utc'::text, now())",
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "customer_id": {
+        "format": "text",
+        "type": "string"
+      },
+      "vendor_id": {
+        "format": "text",
+        "type": "string"
+      },
+      "total": {
+        "format": "numeric",
+        "type": "number"
+      },
+      "status": {
+        "default": "Pending",
+        "format": "text",
+        "type": "string"
+      },
+      "items": {
+        "format": "jsonb"
+      },
+      "delivery_address_lat": {
+        "format": "double precision",
+        "type": "number"
+      },
+      "delivery_address_lng": {
+        "format": "double precision",
+        "type": "number"
+      },
+      "zone_id": {
+        "format": "uuid",
+        "type": "string"
+      },
+      "delivery_partner_id": {
+        "format": "uuid",
+        "type": "string"
+      },
+      "payment_method": {
+        "format": "text",
+        "type": "string"
+      },
+      "payment_status": {
+        "default": "PENDING",
+        "format": "text",
+        "type": "string"
+      },
+      "total_amount": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "pickup_lat": {
+        "format": "double precision",
+        "type": "number"
+      },
+      "pickup_lng": {
+        "format": "double precision",
+        "type": "number"
+      },
+      "delivery_lng": {
+        "format": "double precision",
+        "type": "number"
+      },
+      "delivery_fee": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "platform_fee": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "taxes": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "special_instructions": {
+        "format": "text",
+        "type": "string"
+      },
+      "promo_code": {
+        "format": "text",
+        "type": "string"
+      },
+      "item_total": {
+        "default": 0,
+        "format": "double precision",
+        "type": "number"
+      },
+      "gst": {
+        "default": 0,
+        "format": "double precision",
+        "type": "number"
+      },
+      "tip_amount": {
+        "default": 0,
+        "format": "double precision",
+        "type": "number"
+      },
+      "payment_id": {
+        "format": "text",
+        "type": "string"
+      },
+      "cancellation_reason": {
+        "format": "text",
+        "type": "string"
+      },
+      "commission_rate": {
+        "default": 20,
+        "format": "numeric",
+        "type": "number"
+      },
+      "commission_amount": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "gst_on_commission": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "net_vendor_payable": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "driver_earning": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "cod_amount_collected": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "is_settled_vendor": {
+        "default": false,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "is_settled_driver": {
+        "default": false,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "rider_assigned_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "order_picked_up_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "order_delivered_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "pickup_otp": {
+        "format": "text",
+        "type": "string"
+      },
+      "delivery_otp": {
+        "format": "text",
+        "type": "string"
+      },
+      "payment_state": {
+        "default": "PENDING",
+        "format": "text",
+        "type": "string"
+      },
+      "rider_fee": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "refund_id": {
+        "format": "text",
+        "type": "string"
+      },
+      "cod_collected_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "cash_to_collect": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "confirmed_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "ready_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "dispatched_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "delivered_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "refund_amount": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "rider_id": {
+        "format": "text",
+        "type": "string"
+      },
+      "picked_up_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "cod_collected_amount": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "vendor_earning": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "rider_earning": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "platform_earning": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "commission_applied": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "settlement_status": {
+        "default": "PENDING",
+        "format": "text",
+        "type": "string"
+      },
+      "address": {
+        "format": "text",
+        "type": "string"
+      },
+      "bill_details": {
+        "format": "jsonb"
+      },
+      "vendor_accepted_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "rider_accepted_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "current_lat": {
+        "format": "double precision",
+        "type": "number"
+      },
+      "current_lng": {
+        "format": "double precision",
+        "type": "number"
+      },
+      "last_gps_update": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "speed": {
+        "default": 0,
+        "format": "double precision",
+        "type": "number"
+      },
+      "heading": {
+        "default": 0,
+        "format": "double precision",
+        "type": "number"
+      },
+      "distance_remaining_km": {
+        "default": 0,
+        "format": "double precision",
+        "type": "number"
+      },
+      "eta_minutes": {
+        "default": 0,
+        "format": "integer",
+        "type": "integer"
+      },
+      "address_label": {
+        "format": "text",
+        "type": "string"
+      },
+      "cooking_instructions": {
+        "format": "text",
+        "type": "string"
+      },
+      "customer_lat": {
+        "format": "double precision",
+        "type": "number"
+      },
+      "customer_lng": {
+        "format": "double precision",
+        "type": "number"
+      },
+      "vendor_lat": {
+        "format": "double precision",
+        "type": "number"
+      },
+      "vendor_lng": {
+        "format": "double precision",
+        "type": "number"
+      },
+      "rejection_reason": {
+        "format": "text",
+        "type": "string"
+      },
+      "prepared_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "payment_type": {
+        "default": "COD",
+        "format": "text",
+        "type": "string"
+      },
+      "is_force_cancelled": {
+        "default": false,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "delivery_address_id": {
+        "format": "text",
+        "type": "string"
+      },
+      "is_settled": {
+        "default": false,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "delivery_instructions": {
+        "format": "text",
+        "type": "string"
+      },
+      "delivery_address_snapshot": {
+        "format": "text",
+        "type": "string"
+      },
+      "delivery_lat_snapshot": {
+        "format": "double precision",
+        "type": "number"
+      },
+      "delivery_lng_snapshot": {
+        "format": "double precision",
+        "type": "number"
+      },
+      "customer_name_snapshot": {
+        "format": "text",
+        "type": "string"
+      },
+      "customer_phone_snapshot": {
+        "format": "text",
+        "type": "string"
+      },
+      "customer_name_legacy": {
+        "format": "text",
+        "type": "string"
+      },
+      "customer_phone_legacy": {
+        "format": "text",
+        "type": "string"
+      },
+      "delivery_address": {
+        "default": "'{}'::jsonb",
+        "format": "text",
+        "type": "string"
+      },
+      "accepted_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "assigned_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "pickup_time": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "completed_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "cancelled_at": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "payment_webhook_id": {
+        "format": "text",
+        "type": "string"
+      },
+      "refund_status": {
+        "default": "NONE",
+        "format": "text",
+        "type": "string"
+      },
+      "delivery_id": {
+        "format": "uuid",
+        "type": "string"
+      },
+      "otp": {
+        "format": "text",
+        "type": "string"
+      },
+      "placed_at": {
+        "default": "now()",
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "delivery_lat": {
+        "format": "double precision",
+        "type": "number"
+      },
+      "rider_lat": {
+        "format": "double precision",
+        "type": "number"
+      },
+      "rider_lng": {
+        "format": "double precision",
+        "type": "number"
+      },
+      "rider_last_seen": {
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "estimated_arrival_time": {
+        "default": "Calculating...",
+        "format": "text",
+        "type": "string"
+      },
+      "vendor_name_legacy": {
+        "format": "text",
+        "type": "string"
+      },
+      "vendor_address": {
+        "format": "text",
+        "type": "string"
+      },
+      "delivery_pincode": {
+        "format": "text",
+        "type": "string"
+      },
+      "delivery_house_number": {
+        "format": "text",
+        "type": "string"
+      },
+      "delivery_phone": {
+        "format": "text",
+        "type": "string"
+      },
+      "user_id": {
+        "format": "text",
+        "type": "string"
+      },
+      "customer_name": {
+        "format": "text",
+        "type": "string"
+      },
+      "customer_phone": {
+        "format": "text",
+        "type": "string"
+      },
+      "order_status": {
+        "default": "PLACED",
+        "format": "text",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "products": {
+    "required": [
+      "created_at",
+      "vendor_id",
+      "name",
+      "price"
+    ],
+    "properties": {
+      "created_at": {
+        "default": "timezone('utc'::text, now())",
+        "format": "timestamp with time zone",
+        "type": "string"
+      },
+      "vendor_id": {
+        "format": "text",
+        "type": "string"
+      },
+      "name": {
+        "format": "text",
+        "type": "string"
+      },
+      "description": {
+        "format": "text",
+        "type": "string"
+      },
+      "price": {
+        "format": "numeric",
+        "type": "number"
+      },
+      "image_url": {
+        "format": "text",
+        "type": "string"
+      },
+      "is_available": {
+        "default": true,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "category": {
+        "format": "text",
+        "type": "string"
+      },
+      "is_veg": {
+        "default": true,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "rating": {
+        "default": 0,
+        "format": "numeric",
+        "type": "number"
+      },
+      "votes": {
+        "default": 0,
+        "format": "integer",
+        "type": "integer"
+      },
+      "bestseller": {
+        "default": false,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "discount_price": {
+        "format": "numeric",
+        "type": "number"
+      },
+      "spice_level": {
+        "default": "Medium",
+        "format": "text",
+        "type": "string"
+      },
+      "is_signature": {
+        "default": false,
+        "format": "boolean",
+        "type": "boolean"
+      },
+      "category_id": {
+        "format": "uuid",
+        "type": "string"
+      },
+      "id": {
+        "default": "gen_random_uuid()",
+        "format": "text",
+        "type": "string"
+      },
+      "status": {
+        "default": "Available",
+        "format": "text",
+        "type": "string"
+      },
+      "is_active": {
+        "default": true,
+        "format": "boolean",
+        "type": "boolean"
+      }
+    },
+    "type": "object"
+  }
+}

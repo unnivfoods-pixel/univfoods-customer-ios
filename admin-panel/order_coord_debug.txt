@@ -1,0 +1,40 @@
+{
+  "order_id": "4158a0a7-7a7d-4fd0-8b5c-d5772a43d742",
+  "id": "4158a0a7-7a7d-4fd0-8b5c-d5772a43d742",
+  "customer_id": "rrgtG3C1UHgIcBMMtfdSnF2Vxup2",
+  "vendor_id": "c1589737-0561-4d9d-a499-214655f16992",
+  "rider_id": null,
+  "order_status": "READY",
+  "payment_status": "PENDING",
+  "payment_method": "COD",
+  "total_amount": 51.25,
+  "delivery_address": "near white house, GJJX+H3J, NH 744, Pillaiyarnatham, Tamil Nadu 626125, India",
+  "delivery_lat": 9.5314709,
+  "delivery_lng": 77.6477062,
+  "vendor_lat": null,
+  "vendor_lng": null,
+  "rider_lat": null,
+  "rider_lng": null,
+  "items": [
+    {
+      "qty": 1,
+      "name": "Sambar Curry",
+      "price": 25,
+      "product_id": "f51c090d-329c-4877-93a5-bf1f794591d2"
+    }
+  ],
+  "created_at": "2026-03-06T23:07:14.231279+00:00",
+  "updated_at": "2026-03-06T23:33:52.872801+00:00",
+  "status_display": "Ready",
+  "current_step": 5,
+  "vendor_name": "Curry Station (c1589737)",
+  "vendor_image": "https://dxqcruvarqgnscenixzf.supabase.co/storage/v1/object/public/images/vendors/1772453547981-c6w3p7bhl5u.jpg",
+  "vendor_logo": null,
+  "vendor_phone": "",
+  "vendor_address": "near indra nagar",
+  "rider_name": "Rider Assigned",
+  "rider_phone": null,
+  "rider_avatar": null,
+  "rider_rating": null,
+  "rider_vehicle": null
+}

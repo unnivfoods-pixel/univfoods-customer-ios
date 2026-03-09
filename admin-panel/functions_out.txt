@@ -1,0 +1,6 @@
+{
+  code: 'PGRST202',
+  details: 'Searched for the function public.list_all_functions_help_me without parameters or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.',
+  hint: 'Perhaps you meant to call the function public.longtransactionsenabled',
+  message: 'Could not find the function public.list_all_functions_help_me without parameters in the schema cache'
+}

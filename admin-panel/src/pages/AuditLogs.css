@@ -1,0 +1,163 @@
+/* 📜 MISSION CONTROL AUDIT LOG STYLES */
+
+.audit-page {
+    padding: 0;
+}
+
+.audit-header {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1024px) {
+    .audit-header {
+        margin-bottom: 30px;
+    }
+}
+
+/* Operator Cell Presentation */
+.operator-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.operator-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+    background: #f1f5f9;
+    display: grid;
+    place-items: center;
+    border: 1px solid #e2e8f0;
+}
+
+.operator-name {
+    font-weight: 800;
+    color: #0F172A;
+    font-size: 0.9rem;
+}
+
+/* Protocol Action Formatting */
+.protocol-action {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.protocol-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FFD600;
+    box-shadow: 0 0 10px rgba(255, 214, 0, 0.5);
+}
+
+.protocol-txt {
+    color: #334155;
+    font-weight: 700;
+    font-size: 0.9rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Verified Status Badge */
+.verified-badge {
+    background: #ecfdf5;
+    color: #10b981;
+    padding: 6px 14px;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 1px solid #d1fae5;
+}
+
+/* Audit Integrity Banner */
+.audit-integrity-panel {
+    margin-top: 40px;
+    padding: 40px;
+    background: #0f172a;
+    border-radius: 32px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.15);
+}
+
+.audit-integrity-panel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at top right, rgba(255, 214, 0, 0.1), transparent);
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .audit-integrity-panel {
+        flex-direction: column;
+        text-align: center;
+        padding: 32px;
+        gap: 20px;
+    }
+}
+
+.integrity-icon-box {
+    background: #FFD600;
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+    color: #0F172A;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    box-shadow: 0 10px 25px rgba(255, 214, 0, 0.3);
+}
+
+.integrity-title {
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: #FFD600;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+}
+
+.integrity-desc {
+    margin: 0;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* Responsive Table Overrides for Audit */
+.responsive-table th {
+    padding: 20px 24px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 2px solid #f8fafc;
+}
+
+.responsive-table td {
+    padding: 24px;
+    vertical-align: middle;
+    border-bottom: 1px solid #f8fafc;
+}
+
+.timestamp-cell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #64748b;
+    font-weight: 700;
+    font-size: 0.85rem;
+    font-family: 'JetBrains Mono', monospace;
+}

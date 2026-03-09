@@ -1,0 +1,157 @@
+/* 🔧 FIX HORIZONTAL OVERFLOW - EMERGENCY */
+
+/* ============================================ */
+/* 1. PREVENT HORIZONTAL SCROLL GLOBALLY */
+/* ============================================ */
+
+html,
+body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+    width: 100% !important;
+}
+
+#root {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+    width: 100% !important;
+}
+
+/* ============================================ */
+/* 2. FIX ALL CONTAINERS (REMOVED GLOBAL PREVENT FOR MAPS) */
+/* ============================================ */
+/* * { max-width: 100% !important; }  <-- THIS BREAKS MAP TILES */
+
+.app-container,
+.main-content,
+.page-container,
+.page-content-wrapper {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+/* ============================================ */
+/* 3. FIX TABLES */
+/* ============================================ */
+
+table {
+    max-width: 100% !important;
+    table-layout: auto !important;
+}
+
+.table-container,
+.orders-table-container {
+    overflow-x: auto !important;
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+/* ============================================ */
+/* 4. FIX CARDS & PANELS */
+/* ============================================ */
+
+.glass-panel,
+.card {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+/* ============================================ */
+/* 5. FIX GRIDS */
+/* ============================================ */
+
+.grid,
+.stats-grid,
+.row {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+/* ============================================ */
+/* 6. FIX FORMS */
+/* ============================================ */
+
+form,
+.form-group,
+input,
+textarea,
+select {
+    max-width: 100% !important;
+}
+
+/* ============================================ */
+/* 7. FIX IMAGES */
+/* ============================================ */
+
+img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+/* ============================================ */
+/* 8. REMOVED DESTRUCTIVE GLOBAL OVERFLOW (FIXED MAPS) */
+/* ============================================ */
+
+/* Prevent breaking Leaflet/Flex layouts */
+
+/* ============================================ */
+/* 9. FIX SIDEBAR + CONTENT LAYOUT */
+/* ============================================ */
+
+.sidebar {
+    max-width: 280px !important;
+}
+
+.main-content {
+    max-width: calc(100vw - 280px) !important;
+    overflow-x: hidden !important;
+}
+
+@media (max-width: 1024px) {
+    .main-content {
+        max-width: 100vw !important;
+    }
+}
+
+/* ============================================ */
+/* 10. FIX SEARCH BARS & INPUTS */
+/* ============================================ */
+
+.search-bar,
+.filter-bar {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+/* ============================================ */
+/* 11. RESET ANY PROBLEMATIC WIDTHS */
+/* ============================================ */
+
+/* Remove any fixed widths that cause overflow */
+[style*="width: 100vw"],
+[style*="width: 100%"] {
+    max-width: 100% !important;
+}
+
+/* ============================================ */
+/* 12. FIX MODALS & DRAWERS */
+/* ============================================ */
+
+.modal,
+.drawer,
+.popup {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+}
+
+/* ============================================ */
+/* 13. DEBUG - FIND OVERFLOW ELEMENTS */
+/* ============================================ */
+
+/* Uncomment to highlight elements causing overflow */
+/*
+* {
+    outline: 1px solid red !important;
+}
+*/

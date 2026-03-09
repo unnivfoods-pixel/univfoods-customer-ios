@@ -1,0 +1,58 @@
+[
+  {
+    "id": "38aae661-371d-4a18-b02d-281495cc7ec5",
+    "created_at": "2026-02-14T13:58:48.454663+00:00",
+    "name": "Biryani",
+    "image_url": "https://dxqcruvarqgnscenixzf.supabase.co/storage/v1/object/public/images/categories/1771268998527-wjist5vmqle.png",
+    "priority": 100,
+    "is_active": true
+  },
+  {
+    "id": "234f5579-b43f-4fbf-bd56-cae82a461ff5",
+    "created_at": "2026-02-16T19:32:16.694269+00:00",
+    "name": "Meals",
+    "image_url": "https://dxqcruvarqgnscenixzf.supabase.co/storage/v1/object/public/images/categories/1771270329629-pnrhh0maay9.webp",
+    "priority": 0,
+    "is_active": true
+  },
+  {
+    "id": "ead8025a-5529-45c6-bde2-cd4eca22d659",
+    "created_at": "2026-02-22T11:58:31.357649+00:00",
+    "name": "Roti's",
+    "image_url": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+    "priority": 10,
+    "is_active": true
+  },
+  {
+    "id": "37637ba4-c371-4fb1-af80-d2ecc869b259",
+    "created_at": "2026-02-22T11:58:31.357649+00:00",
+    "name": "Non-veg combo",
+    "image_url": "https://images.unsplash.com/photo-1630383249896-424e482df921?auto=format&fit=crop&w=800&q=80",
+    "priority": 9,
+    "is_active": true
+  },
+  {
+    "id": "85b81921-e8b1-4405-991d-0f10ec9c1d6b",
+    "created_at": "2026-02-22T11:58:31.357649+00:00",
+    "name": "Veg combo",
+    "image_url": "https://dxqcruvarqgnscenixzf.supabase.co/storage/v1/object/public/images/categories/1771873719313-ny503nixatr.jpg",
+    "priority": 8,
+    "is_active": true
+  },
+  {
+    "id": "38aae661-371d-4a18-b0a4-95cc7ec5b495",
+    "created_at": "2026-02-24T10:10:05.886416+00:00",
+    "name": "Non-veg Curry",
+    "image_url": "https://dxqcruvarqgnscenixzf.supabase.co/storage/v1/object/public/images/categories/1772043242535-5xc90eevqbl.jpg",
+    "priority": 1,
+    "is_active": true
+  },
+  {
+    "id": "7c52ff90-eb2c-4688-a2a0-55d13ed93efd",
+    "created_at": "2026-02-14T13:58:48.454663+00:00",
+    "name": "Veg curry",
+    "image_url": "https://dxqcruvarqgnscenixzf.supabase.co/storage/v1/object/public/images/categories/1772043264545-gvvyzdasjpm.jpg",
+    "priority": 90,
+    "is_active": true
+  }
+]

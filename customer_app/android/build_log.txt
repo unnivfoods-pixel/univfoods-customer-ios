@@ -1,0 +1,152 @@
+Initialized native services in: C:\Users\ganap\.gradle\native
+Initialized jansi services in: C:\Users\ganap\.gradle\native
+Received JVM installation metadata from 'C:\Users\ganap\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.17.10-hotspot': {JAVA_HOME=C:\Users\ganap\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.17.10-hotspot, JAVA_VERSION=17.0.17, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.17+10, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.17+10, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
+Found daemon DaemonInfo{pid=32664, address=[8d516243-82b6-48d8-b861-19502ec36069 port:53492, addresses:[/127.0.0.1]], state=Idle, lastBusy=1771048128997, context=DefaultDaemonContext[uid=a36ef060-0b34-4d25-9422-82b9dd9aa0d5,javaHome=C:\Users\ganap\AppData\Local\Programs\Android Studio\jbr,daemonRegistryDir=C:\Users\ganap\.gradle\daemon,pid=32664,idleTimeout=10800000,priority=NORMAL,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx4G,-Dfile.encoding=windows-1252,-Duser.country=IN,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+Java home is different.
+Wanted: DefaultDaemonContext[uid=null,javaHome=C:\Users\ganap\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.17.10-hotspot,daemonRegistryDir=C:\Users\ganap\.gradle\daemon,pid=36696,idleTimeout=null,priority=NORMAL,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx4G,-Dfile.encoding=windows-1252,-Duser.country=IN,-Duser.language=en,-Duser.variant]
+Actual: DefaultDaemonContext[uid=a36ef060-0b34-4d25-9422-82b9dd9aa0d5,javaHome=C:\Users\ganap\AppData\Local\Programs\Android Studio\jbr,daemonRegistryDir=C:\Users\ganap\.gradle\daemon,pid=32664,idleTimeout=10800000,priority=NORMAL,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx4G,-Dfile.encoding=windows-1252,-Duser.country=IN,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 2412). The daemon log file: C:\Users\ganap\.gradle\daemon\7.6.3\daemon-2412.out.log
+Starting 3rd build in daemon [uptime: 2 mins 39.466 secs, performance: 100%]
+Using 16 worker leases.
+Now considering [C:\Users\ganap\.gemini\antigravity\scratch\curry-delivery-platform\customer_app\android, C:\src\flutter\packages\flutter_tools\gradle] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Now considering [C:\src\flutter\packages\flutter_tools\gradle, C:\Users\ganap\.gemini\antigravity\scratch\curry-delivery-platform\customer_app\android] as hierarchies to watch
+
+> Configure project :gradle
+Evaluating project ':gradle' using build file 'C:\src\flutter\packages\flutter_tools\gradle\build.gradle.kts'.
+Caching disabled for Kotlin DSL accessors for project ':gradle' because:
+  Build cache is disabled
+Skipping Kotlin DSL accessors for project ':gradle' as it is up-to-date.
+Resolve mutations for :gradle:compileJava (Thread[Execution worker,5,main]) started.
+:gradle:compileJava (Thread[Execution worker Thread 7,5,main]) started.
+
+> Task :gradle:compileJava NO-SOURCE
+Skipping task ':gradle:compileJava' as it has no source files and no previous output files.
+Resolve mutations for :gradle:compileGroovy (Thread[included builds,5,main]) started.
+:gradle:compileGroovy (Thread[included builds,5,main]) started.
+
+> Task :gradle:compileGroovy UP-TO-DATE
+Caching disabled for task ':gradle:compileGroovy' because:
+  Build cache is disabled
+Skipping task ':gradle:compileGroovy' as it is up-to-date.
+Resolve mutations for :gradle:pluginDescriptors (Thread[included builds,5,main]) started.
+:gradle:pluginDescriptors (Thread[included builds,5,main]) started.
+
+> Task :gradle:pluginDescriptors UP-TO-DATE
+Caching disabled for task ':gradle:pluginDescriptors' because:
+  Build cache is disabled
+Skipping task ':gradle:pluginDescriptors' as it is up-to-date.
+Resolve mutations for :gradle:processResources (Thread[included builds,5,main]) started.
+:gradle:processResources (Thread[included builds,5,main]) started.
+
+> Task :gradle:processResources UP-TO-DATE
+Caching disabled for task ':gradle:processResources' because:
+  Build cache is disabled
+Skipping task ':gradle:processResources' as it is up-to-date.
+Resolve mutations for :gradle:classes (Thread[included builds,5,main]) started.
+:gradle:classes (Thread[included builds,5,main]) started.
+
+> Task :gradle:classes UP-TO-DATE
+Skipping task ':gradle:classes' as it has no actions.
+Resolve mutations for :gradle:jar (Thread[included builds,5,main]) started.
+:gradle:jar (Thread[included builds,5,main]) started.
+
+> Task :gradle:jar UP-TO-DATE
+Caching disabled for task ':gradle:jar' because:
+  Build cache is disabled
+Skipping task ':gradle:jar' as it is up-to-date.
+Settings evaluated using settings file 'C:\Users\ganap\.gemini\antigravity\scratch\curry-delivery-platform\customer_app\android\settings.gradle'.
+Projects loaded. Root project using build file 'C:\Users\ganap\.gemini\antigravity\scratch\curry-delivery-platform\customer_app\android\build.gradle'.
+Included projects: [root project 'android', project ':app', project ':app_links', project ':firebase_auth', project ':firebase_core', project ':firebase_messaging', project ':flutter_local_notifications', project ':flutter_plugin_android_lifecycle', project ':fluttertoast', project ':geolocator_android', project ':google_maps_flutter_android', project ':google_sign_in_android', project ':path_provider_android', project ':razorpay_flutter', project ':share_plus', project ':shared_preferences_android', project ':url_launcher_android']
+
+> Configure project :app
+Evaluating project ':app' using build file 'C:\Users\ganap\.gemini\antigravity\scratch\curry-delivery-platform\customer_app\android\app\build.gradle'.
+Using Kotlin Gradle Plugin gradle76 variant
+Parsed shrinker version: 3.3.70
+
+> Configure project :
+Evaluating root project 'android' using build file 'C:\Users\ganap\.gemini\antigravity\scratch\curry-delivery-platform\customer_app\android\build.gradle'.
+
+> Configure project :app_links
+Evaluating project ':app_links' using build file 'C:\Users\ganap\AppData\Local\Pub\Cache\hosted\pub.dev\app_links-6.4.0\android\build.gradle'.
+
+> Configure project :firebase_auth
+Evaluating project ':firebase_auth' using build file 'C:\Users\ganap\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_auth-5.7.0\android\build.gradle'.
+
+> Configure project :firebase_core
+Evaluating project ':firebase_core' using build file 'C:\Users\ganap\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_core-3.15.2\android\build.gradle'.
+
+> Configure project :firebase_messaging
+Evaluating project ':firebase_messaging' using build file 'C:\Users\ganap\AppData\Local\Pub\Cache\hosted\pub.dev\firebase_messaging-15.2.10\android\build.gradle'.
+
+> Configure project :flutter_local_notifications
+Evaluating project ':flutter_local_notifications' using build file 'C:\Users\ganap\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_local_notifications-19.5.0\android\build.gradle'.
+Warning: The plugin flutter_local_notifications requires Android SDK version 35 or higher.
+For more information about build configuration, see https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
+
+> Configure project :flutter_plugin_android_lifecycle
+Evaluating project ':flutter_plugin_android_lifecycle' using build file 'C:\Users\ganap\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_plugin_android_lifecycle-2.0.22\android\build.gradle'.
+
+> Configure project :fluttertoast
+Evaluating project ':fluttertoast' using build file 'C:\Users\ganap\AppData\Local\Pub\Cache\hosted\pub.dev\fluttertoast-8.2.14\android\build.gradle'.
+Using Kotlin Gradle Plugin gradle76 variant
+
+> Configure project :geolocator_android
+Evaluating project ':geolocator_android' using build file 'C:\Users\ganap\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.1\android\build.gradle'.
+
+> Configure project :google_maps_flutter_android
+Evaluating project ':google_maps_flutter_android' using build file 'C:\Users\ganap\AppData\Local\Pub\Cache\hosted\pub.dev\google_maps_flutter_android-2.14.7\android\build.gradle'.
+
+> Configure project :google_sign_in_android
+Evaluating project ':google_sign_in_android' using build file 'C:\Users\ganap\AppData\Local\Pub\Cache\hosted\pub.dev\google_sign_in_android-6.1.31\android\build.gradle'.
+
+> Configure project :path_provider_android
+Evaluating project ':path_provider_android' using build file 'C:\Users\ganap\AppData\Local\Pub\Cache\hosted\pub.dev\path_provider_android-2.2.10\android\build.gradle'.
+
+> Configure project :razorpay_flutter
+Evaluating project ':razorpay_flutter' using build file 'C:\Users\ganap\AppData\Local\Pub\Cache\hosted\pub.dev\razorpay_flutter-1.4.0\android\build.gradle'.
+
+> Configure project :share_plus
+Evaluating project ':share_plus' using build file 'C:\Users\ganap\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-12.0.1\android\build.gradle'.
+Using Kotlin Gradle Plugin gradle76 variant
+
+FAILURE: Build completed with 2 failures.
+
+1: Task failed with an exception.
+-----------
+* Where:
+Build file 'C:\Users\ganap\AppData\Local\Pub\Cache\hosted\pub.dev\share_plus-12.0.1\android\build.gradle' line: 29
+
+* What went wrong:
+A problem occurred evaluating project ':share_plus'.
+> Could not get unknown property 'flutter' for extension 'android' of type com.android.build.gradle.LibraryExtension.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --debug option to get more log output.
+> Run with --scan to get full insights.
+==============================================================================
+
+2: Task failed with an exception.
+-----------
+* What went wrong:
+A problem occurred configuring project ':share_plus'.
+> Failed to notify project evaluation listener.
+   > Cannot invoke method substring() on null object
+   > compileSdkVersion is not specified. Please add it to build.gradle
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --debug option to get more log output.
+> Run with --scan to get full insights.
+==============================================================================
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 4s
+4 actionable tasks: 4 up-to-date
+Watched directory hierarchies: [C:\src\flutter\packages\flutter_tools\gradle]

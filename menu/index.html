@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | UNIV Foods - Signature Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            yellow: '#FFD600',
+                            green: '#1B5E20',
+                            dark: '#0F172A',
+                            light: '#F4F7FE',
+                            navy: '#020617',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .menu-card {
+            border-radius: 40px;
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            background: white;
+            overflow: hidden;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 50px 100px rgba(0, 0, 0, 0.12);
+        }
+
+        .category-pill {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #e2e8f0;
+        }
+
+        .category-pill:hover:not(.active) {
+            transform: translateY(-4px);
+            background: #f1f5f9;
+            border-color: #cbd5e1;
+        }
+
+        .category-pill.active {
+            background: #1B5E20 !important;
+            color: white !important;
+            border-color: #1B5E20 !important;
+            box-shadow: 0 20px 40px rgba(27, 94, 32, 0.25);
+            transform: translateY(-4px) scale(1.05);
+        }
+
+        .fade-exit {
+            opacity: 0;
+            transform: translateY(20px) scale(0.9);
+        }
+
+        .fade-enter {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    </style>
+</head>
+
+<body class="bg-[#F8FAFC]">
+
+    <!-- Floating Capsule Navbar -->
+    <nav class="fixed top-6 left-0 right-0 z-50 px-6">
+        <div class="max-w-6xl mx-auto glass-nav rounded-2xl px-8 py-3.5 flex items-center justify-between shadow-2xl">
+            <div class="flex items-center gap-3">
+                <div class="w-11 h-11 flex items-center justify-center flex-shrink-0">
+                    <img src="../admin-panel/src/assets/univ_logo.png" alt="UNIV FOODS"
+                        class="max-w-full max-h-full object-contain" />
+                </div>
+                <div class="flex flex-col leading-none">
+                    <span class="text-xl font-[1000] tracking-tighter text-brand-dark">UNIV <span
+                            class="text-brand-yellow">FOODS</span></span>
+                    <span class="text-[8px] font-black uppercase tracking-[0.2em] text-slate-400 mt-1">Terminal
+                        Selection</span>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex items-center space-x-10">
+                <a href="/"
+                    class="text-[12px] font-black uppercase tracking-widest text-brand-dark opacity-60 hover:opacity-100 transition">Home</a>
+                <a href="/index.html#features"
+                    class="text-[12px] font-black uppercase tracking-widest opacity-60 hover:opacity-100 transition">Features</a>
+                <a href="/index.html#experience"
+                    class="text-[12px] font-black uppercase tracking-widest opacity-60 hover:opacity-100 transition">Experience</a>
+                <a href="#" class="text-[12px] font-black uppercase tracking-widest text-brand-green">Menu</a>
+                <a href="javascript:void(0)"
+                    class="text-[12px] font-[1000] uppercase tracking-widest opacity-60 hover:opacity-100 transition">FOR
+                    PARTNERS</a>
+            </div>
+
+            <a href="/index.html#download"
+                class="bg-brand-dark text-white px-7 py-3 rounded-xl font-black text-[13px] hover:scale-105 transition shadow-xl shadow-brand-dark/10">
+                Get the App
+            </a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header
+        class="pt-64 pb-24 px-8 text-center bg-brand-navy relative overflow-hidden flex flex-col justify-center items-center">
+        <div class="absolute inset-0 z-0 opacity-60">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&q=80"
+                class="w-full h-full object-cover" alt="">
+            <div class="absolute inset-0 bg-gradient-to-b from-brand-navy via-brand-navy/60 to-[#F8FAFC]"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto">
+            <h1 class="text-6xl md:text-8xl font-[1000] text-white mb-6 tracking-tighter leading-none">
+                Signature <span class="font-serif italic text-brand-yellow">Collection.</span>
+            </h1>
+            <p class="text-xl text-white/80 font-semibold max-w-2xl mx-auto leading-relaxed">
+                Handcrafted masterpieces delivering authentic heritage flavors with logistics precision.
+            </p>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <main class="max-w-7xl mx-auto px-6 pb-32">
+        <!-- Interactive Category Pills -->
+        <div class="flex flex-wrap justify-center gap-4 mb-20 mt-[-40px] relative z-20">
+            <button onclick="filterCategory('all', this)"
+                class="category-pill active px-10 py-5 rounded-[2.5rem] font-[1000] text-[10px] uppercase tracking-[0.25em] bg-white shadow-xl">All
+                Items</button>
+            <button onclick="filterCategory('Starter', this)"
+                class="category-pill px-10 py-5 rounded-[2.5rem] font-[1000] text-[10px] uppercase tracking-[0.25em] bg-white shadow-lg text-brand-dark">Starter</button>
+            <button onclick="filterCategory('Main', this)"
+                class="category-pill px-10 py-5 rounded-[2.5rem] font-[1000] text-[10px] uppercase tracking-[0.25em] bg-white shadow-lg text-brand-dark">Main</button>
+            <button onclick="filterCategory('Tiffin', this)"
+                class="category-pill px-10 py-5 rounded-[2.5rem] font-[1000] text-[10px] uppercase tracking-[0.25em] bg-white shadow-lg text-brand-dark">Tiffin</button>
+        </div>
+
+        <div id="menu-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <!-- ITEM 1 -->
+            <div class="menu-card group fade-enter" data-category="Starter">
+                <div class="relative h-80">
+                    <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=800"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-1000"
+                        alt="Heritage Paneer Tikka">
+                    <div
+                        class="absolute top-6 right-6 bg-brand-yellow text-brand-dark px-6 py-2 rounded-full font-black text-sm shadow-2xl">
+                        ₹299</div>
+                    <div
+                        class="absolute bottom-6 left-6 bg-white/90 px-4 py-1.5 rounded-full border border-green-500 flex items-center gap-2">
+                        <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                        <span class="text-[9px] font-black text-green-700">PURE VEG</span>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <span
+                        class="text-[10px] font-black text-brand-green uppercase tracking-widest mb-4 block opacity-60">Hand-Pressed
+                        Starters</span>
+                    <h3
+                        class="text-2xl font-[1000] mb-4 tracking-tighter text-brand-dark group-hover:text-brand-green transition-colors">
+                        Heritage Paneer Tikka</h3>
+                    <p class="text-slate-500 text-sm font-semibold leading-relaxed mb-10 line-clamp-2 h-10">Fresh paneer
+                        cubes marinated in heritage spices and slow-roasted in a clay oven.</p>
+                    <div class="flex items-center justify-between pt-8 border-t border-slate-100">
+                        <div class="flex gap-1 text-brand-yellow text-xs">★★★★★</div>
+                        <button
+                            class="text-brand-green font-black text-[10px] uppercase tracking-widest flex items-center gap-2 group/btn">
+                            Order Now <svg class="w-4 h-4 transform group-hover/btn:translate-x-1 transition"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="menu-card group fade-enter" data-category="Main">
+                <div class="relative h-80">
+                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=800"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-1000"
+                        alt="Signature Butter Chicken">
+                    <div
+                        class="absolute top-6 right-6 bg-brand-yellow text-brand-dark px-6 py-2 rounded-full font-black text-sm shadow-2xl">
+                        ₹380</div>
+                </div>
+                <div class="p-8">
+                    <span
+                        class="text-[10px] font-black text-brand-green uppercase tracking-widest mb-4 block opacity-60">Slow-Cooked
+                        Cravings</span>
+                    <h3
+                        class="text-2xl font-[1000] mb-4 tracking-tighter text-brand-dark group-hover:text-brand-green transition-colors">
+                        Signature Butter Chicken</h3>
+                    <p class="text-slate-500 text-sm font-semibold leading-relaxed mb-10 line-clamp-2 h-10">Tender
+                        chicken pieces simmered in a rich, creamy tomato gravy with artisan butter.</p>
+                    <div class="flex items-center justify-between pt-8 border-t border-slate-50">
+                        <div class="flex gap-1 text-brand-yellow text-xs">★★★★★</div>
+                        <button
+                            class="text-brand-green font-black text-[10px] uppercase tracking-widest flex items-center gap-2 group/btn">
+                            Order Now <svg class="w-4 h-4 transform group-hover/btn:translate-x-1 transition"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="menu-card group fade-enter" data-category="Tiffin">
+                <div class="relative h-80">
+                    <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?w=800"
+                        class="w-full h-full object-cover group-hover:scale-110 transition duration-1000"
+                        alt="Royal Tiffin Feast">
+                    <div
+                        class="absolute top-6 right-6 bg-brand-yellow text-brand-dark px-6 py-2 rounded-full font-black text-sm shadow-2xl">
+                        ₹180</div>
+                    <div
+                        class="absolute bottom-6 left-6 bg-white/90 px-4 py-1.5 rounded-full border border-green-500 flex items-center gap-2">
+                        <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                        <span class="text-[9px] font-black text-green-700">PURE VEG</span>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <span
+                        class="text-[10px] font-black text-brand-green uppercase tracking-widest mb-4 block opacity-60">Heritage
+                        Breakfast</span>
+                    <h3
+                        class="text-2xl font-[1000] mb-4 tracking-tighter text-brand-dark group-hover:text-brand-green transition-colors">
+                        Royal Tiffin Feast</h3>
+                    <p class="text-slate-500 text-sm font-semibold leading-relaxed mb-10 line-clamp-2 h-10">A complete
+                        traditional morning meal featuring fluffy idlis and authentic sambar.</p>
+                    <div class="flex items-center justify-between pt-8 border-t border-slate-50">
+                        <div class="flex gap-1 text-brand-yellow text-xs">★★★★★</div>
+                        <button
+                            class="text-brand-green font-black text-[10px] uppercase tracking-widest flex items-center gap-2 group/btn">
+                            Order Now <svg class="w-4 h-4 transform group-hover/btn:translate-x-1 transition"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-brand-navy pt-20 pb-12 px-8 overflow-hidden relative border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <p class="text-slate-400 text-sm font-bold tracking-[0.25em] uppercase">&copy; 2026 UNIV Foods Pvt Ltd. All
+                Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function filterCategory(category, btn) {
+            // Update UI state of pills
+            document.querySelectorAll('.category-pill').forEach(b => {
+                b.classList.remove('active');
+                b.classList.add('shadow-lg', 'text-brand-dark');
+            });
+            btn.classList.add('active');
+            btn.classList.remove('shadow-lg', 'text-brand-dark');
+
+            // Apply smooth filtering with animations
+            const cards = document.querySelectorAll('.menu-card');
+            cards.forEach(card => {
+                const cardCat = card.getAttribute('data-category');
+                if (category === 'all' || cardCat === category) {
+                    card.style.display = 'block';
+                    setTimeout(() => {
+                        card.classList.remove('fade-exit');
+                        card.classList.add('fade-enter');
+                    }, 50);
+                } else {
+                    card.classList.remove('fade-enter');
+                    card.classList.add('fade-exit');
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 400);
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

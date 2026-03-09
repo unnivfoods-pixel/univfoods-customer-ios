@@ -1,0 +1,16 @@
+
+# 🛑 CRITICAL: INCORRECT API KEY
+
+The key you provided (`sb_publishable_...`) is causing the `Invalid API Key` error.
+Flutter needs the **JWT Anon Key**, which starts with `ey...`.
+
+## HOW TO FIND IT:
+1. Go to Supabase Dashboard -> **Settings** (Cog icon) -> **API**.
+2. Look for **Project API keys** (top section).
+3. Find the one labeled `anon` `public`.
+4. It should look like a long string of random characters starting with `ey...`
+   (Example: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...`)
+
+**Please paste that key below (or in the chat):**
+
+SUPABASE_ANON_KEY=
