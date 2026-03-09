@@ -32,14 +32,14 @@ def flutter_root
   return File.expand_path(File.join('..', '..', '..', 'flutter'))
 end
 
-# Find the tools script
-flutter_backend_path = File.join(flutter_root, 'packages', 'flutter_tools', 'bin', 'xcode_backend.rb')
-unless File.exist?(flutter_backend_path)
+# Find the tools script (podhelper.rb is the correct one for CocoaPods)
+flutter_podhelper_path = File.join(flutter_root, 'packages', 'flutter_tools', 'bin', 'podhelper.rb')
+unless File.exist?(flutter_podhelper_path)
   # Try one last common Mac path
-  flutter_backend_path = File.expand_path(File.join('..', '..', '..', '..', 'flutter', 'packages', 'flutter_tools', 'bin', 'xcode_backend.rb'))
+  flutter_podhelper_path = File.expand_path(File.join('..', '..', '..', '..', 'flutter', 'packages', 'flutter_tools', 'bin', 'podhelper.rb'))
 end
 
-require flutter_backend_path if File.exist?(flutter_backend_path)
+require flutter_podhelper_path if File.exist?(flutter_podhelper_path)
 
 
 target 'Runner' do
