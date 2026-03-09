@@ -5,6 +5,8 @@
 **/.flutter-plugins
 **/.flutter-plugins-dependencies
 **/ios/Flutter/.last_build_id
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
 **/android/app/debug/
 **/android/app/profile/
 **/android/app/release/

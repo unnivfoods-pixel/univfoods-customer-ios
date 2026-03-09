@@ -11,22 +11,36 @@ project 'Runner', {
 }
 
 def flutter_root
-  # Check environment variable first (Standard for Codemagic)
-  return ENV['FLUTTER_ROOT'] if ENV['FLUTTER_ROOT']
+  # 1. Environment variable (Usually correct on Codemagic)
+  return ENV['FLUTTER_ROOT'] if ENV['FLUTTER_ROOT'] && File.directory?(ENV['FLUTTER_ROOT'])
 
+  # 2. Extract from Generated.xcconfig (Created by flutter pub get)
   generated_xcode_build_settings_path = File.expand_path(File.join('..', 'Flutter', 'Generated.xcconfig'), __FILE__)
   if File.exist?(generated_xcode_build_settings_path)
     File.foreach(generated_xcode_build_settings_path) do |line|
       matches = line.match(/FLUTTER_ROOT=(.*)/)
-      return matches[1].strip if matches
+      next unless matches
+      path = matches[1].strip
+      return path if File.directory?(path)
     end
   end
+
+  # 3. Last fallback (Standard for CI)
+  return "/Users/builder/programs/flutter" if File.directory?("/Users/builder/programs/flutter")
   
-  # Fallback to a default path if everything else fails
+  # Fallback to local relative (Default for flutter)
   return File.expand_path(File.join('..', '..', '..', 'flutter'))
 end
 
-require File.expand_path(File.join('packages', 'flutter_tools', 'bin', 'xcode_backend.rb'), flutter_root)
+# Find the tools script
+flutter_backend_path = File.join(flutter_root, 'packages', 'flutter_tools', 'bin', 'xcode_backend.rb')
+unless File.exist?(flutter_backend_path)
+  # Try one last common Mac path
+  flutter_backend_path = File.expand_path(File.join('..', '..', '..', '..', 'flutter', 'packages', 'flutter_tools', 'bin', 'xcode_backend.rb'))
+end
+
+require flutter_backend_path if File.exist?(flutter_backend_path)
+
 
 target 'Runner' do
   use_frameworks!
