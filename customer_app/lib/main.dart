@@ -27,45 +27,50 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   // 1. CRITICAL: Initialize core services before the app starts
-  // This ensures sessions are loaded before RootDecision makes a choice
   try {
-    // 🛡️ LOAD SESSION FIRST (Before anything else)
+    // 🛡️ LOAD SESSION FIRST
     await SupabaseConfig.loadSessionFromDisk();
 
-    await Firebase.initializeApp();
-
-    // 🛡️ Bypassing Robot Check (reCAPTCHA)
-    // 🛡️ PRODUCTION READINESS
-    // We set this to FALSE so Firebase can perform real verification.
-    if (kDebugMode) {
-      try {
-        // Set to false for real SMS; true ONLY for "Testing Numbers" in Firebase
-        await fb.FirebaseAuth.instance
-            .setSettings(appVerificationDisabledForTesting: false);
-        debugPrint(
-            ">>> [AUTH] Real Verification: ENABLED (Ready for Play Store)");
-      } catch (e) {
-        debugPrint(">>> [AUTH] Warning: $e");
-      }
-    }
-
-    // 🛡️ APP CHECK: MANDATORY for Silent OTP in Debug Mode
-    // This provides the "Client Identifier" that is currently missing.
     try {
-      await FirebaseAppCheck.instance.activate(
-        androidProvider:
-            kDebugMode ? AndroidProvider.debug : AndroidProvider.playIntegrity,
-        appleProvider: AppleProvider.deviceCheck,
-      );
-      debugPrint(
-          ">>> [APP CHECK] OK: ${kDebugMode ? 'DEBUG' : 'PLAY_INTEGRITY'}");
-    } catch (e) {
-      debugPrint(">>> [APP CHECK] FAILED: $e");
-    }
+      // 🛡️ RESILIENT INITIALIZATION
+      // We use a timeout to prevent missing Google-Services config from hanging the app
+      await Firebase.initializeApp().timeout(const Duration(seconds: 5),
+          onTimeout: () {
+        debugPrint(
+            ">>> [FIREBASE] Initialization timed out. Skipping native sync.");
+        return Firebase.app();
+      });
 
-    await SupabaseConfig.initialize();
+      // 🛡️ Bypassing Robot Check (reCAPTCHA)
+      if (kDebugMode) {
+        try {
+          await fb.FirebaseAuth.instance
+              .setSettings(appVerificationDisabledForTesting: false);
+        } catch (e) {
+          debugPrint(">>> [AUTH] Warning: $e");
+        }
+      }
+
+      // 🛡️ APP CHECK
+      try {
+        await FirebaseAppCheck.instance
+            .activate(
+              androidProvider: kDebugMode
+                  ? AndroidProvider.debug
+                  : AndroidProvider.playIntegrity,
+              appleProvider: AppleProvider.deviceCheck,
+            )
+            .timeout(const Duration(seconds: 3));
+      } catch (e) {
+        debugPrint(">>> [APP CHECK] Skipping: $e");
+      }
+
+      await SupabaseConfig.initialize();
+    } catch (e) {
+      debugPrint("FIREBASE/SUPABASE INIT ERROR (Handled): $e");
+    }
   } catch (e) {
-    debugPrint("CRITICAL INIT ERROR: $e");
+    debugPrint("CRITICAL BOOT ERROR: $e");
   }
 
   // 2. Load persistence
@@ -76,8 +81,7 @@ void main() async {
   await MenuStore().loadFromDisk();
   await FavoriteStore.loadLocal();
 
-  // 3. 🔔 Pre-initialize notification plugin so realtime notifs work immediately
-  //    This ensures the plugin is ready before ANY realtime event arrives
+  // 3. 🔔 Pre-initialize notification plugin
   NotificationService.ensureNotificationsReady();
 
   runApp(const CustomerApp());
@@ -122,8 +126,6 @@ class RootDecision extends StatefulWidget {
 }
 
 class _RootDecisionState extends State<RootDecision> {
-  // bool _initialized = false; // No longer used as build returns SizedBox.shrink()
-
   @override
   void initState() {
     super.initState();
@@ -133,16 +135,18 @@ class _RootDecisionState extends State<RootDecision> {
   Future<void> _bootstrap() async {
     debugPrint(">>> [RAPID BOOT] START");
 
-    // Session is already initialized in main(), so we check it immediately
     final String? userId = SupabaseConfig.forcedUserId;
     debugPrint(">>> [RAPID BOOT] FINAL SESSION CHECK: $userId");
 
     if (mounted) {
       if (userId != null && userId.isNotEmpty) {
-        // Initialize notifications (Permission request + Channels)
-        await NotificationService.initialize(context);
+        try {
+          await NotificationService.initialize(context)
+              .timeout(const Duration(seconds: 5));
+        } catch (e) {
+          debugPrint(">>> [NOTIF] Initialization skipped: $e");
+        }
 
-        // Run deep sync in background
         SupabaseConfig.bootstrap();
         _safeNavigate('/home');
       } else {
@@ -161,7 +165,6 @@ class _RootDecisionState extends State<RootDecision> {
 
   @override
   Widget build(BuildContext context) {
-    // Show the premium loader while bootstrapping
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
