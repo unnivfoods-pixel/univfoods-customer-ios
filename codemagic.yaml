@@ -1,6 +1,6 @@
 workflows:
   ios-workflow:
-    name: iOS Customer App Build
+    name: iOS Customer App Preview
     working_directory: customer_app
     instance_type: mac_mini_m1
     max_build_duration: 60
@@ -21,9 +21,14 @@ workflows:
           cd ios
           pod repo update
           pod install
-      - name: Build iOS (No Code Signing)
+      - name: Build iOS Simulator (for App Preview)
+        script: |
+          # This creates the .app file needed for the browser preview
+          flutter build ios --simulator --debug --no-codesign
+      - name: Build iOS Release (for Download)
         script: |
           flutter build ios --release --no-codesign
     artifacts:
+      - build/ios/iphonesimulator/*.app
       - build/ios/iphoneos/*.app
       - build/ios/ipa/*.ipa
