@@ -6,15 +6,21 @@ workflows:
     max_build_duration: 60
     environment:
       flutter: stable
-      xcode: latest
+      xcode: 15.0
       cocoapods: default
     scripts:
+      - name: Flutter configuration
+        script: |
+          flutter config --no-analytics
+          flutter precache --ios
       - name: Flutter pub get
         script: |
           flutter pub get
       - name: Install CocoaPods
         script: |
-          cd ios && pod repo update && pod install
+          cd ios
+          pod repo update
+          pod install
       - name: Build iOS (No Code Signing)
         script: |
           flutter build ios --release --no-codesign

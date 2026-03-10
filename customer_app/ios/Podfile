@@ -1,52 +1,18 @@
-# Uncomment this line to define a global platform for your project
+# Standard Flutter Podfile for Cloud Builds
 platform :ios, '15.0'
 
-# CocoaPods analytics sends network stats synchronously affecting flutter build latency.
 ENV['COCOAPODS_DISABLE_STATS'] = '1'
 
-project 'Runner', {
-  'Debug' => :debug,
-  'Release' => :release,
-  'Profile' => :profile,
-}
-
-def flutter_root
-  # 1. Environment variable (Usually correct on Codemagic)
-  return ENV['FLUTTER_ROOT'] if ENV['FLUTTER_ROOT'] && File.directory?(ENV['FLUTTER_ROOT'])
-
-  # 2. Extract from Generated.xcconfig (Created by flutter pub get)
-  generated_xcode_build_settings_path = File.expand_path(File.join('..', 'Flutter', 'Generated.xcconfig'), __FILE__)
-  if File.exist?(generated_xcode_build_settings_path)
-    File.foreach(generated_xcode_build_settings_path) do |line|
-      matches = line.match(/FLUTTER_ROOT=(.*)/)
-      next unless matches
-      path = matches[1].strip
-      return path if File.directory?(path)
-    end
-  end
-
-  # 3. Last fallback (Standard for CI)
-  return "/Users/builder/programs/flutter" if File.directory?("/Users/builder/programs/flutter")
-  
-  # Fallback to local relative (Default for flutter)
-  return File.expand_path(File.join('..', '..', '..', 'flutter'))
-end
-
-# Find the tools script (podhelper.rb is the correct one for CocoaPods)
-flutter_podhelper_path = File.join(flutter_root, 'packages', 'flutter_tools', 'bin', 'podhelper.rb')
-unless File.exist?(flutter_podhelper_path)
-  # Try one last common Mac path
-  flutter_podhelper_path = File.expand_path(File.join('..', '..', '..', '..', 'flutter', 'packages', 'flutter_tools', 'bin', 'podhelper.rb'))
-end
-
-require flutter_podhelper_path if File.exist?(flutter_podhelper_path)
-
+# Use the standard FLUTTER_ROOT provided by Codemagic
+podhelper_path = File.join(ENV['FLUTTER_ROOT'], 'packages', 'flutter_tools', 'bin', 'podhelper.rb')
+require podhelper_path
 
 target 'Runner' do
   use_frameworks!
   use_modular_headers!
 
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
+
   target 'RunnerTests' do
     inherit! :search_paths
   end
