@@ -13,7 +13,6 @@ import 'features/auth/splash_login_screen.dart';
 import 'features/home/home_screen.dart';
 import 'features/cart/cart_screen.dart';
 import 'features/profile/notifications_screen.dart';
-// import 'features/profile/legal_consent_screen.dart'; // No longer used in root nav
 import 'features/menu/menu_screen.dart';
 import 'core/widgets/pro_loader.dart';
 import 'core/services/notification_service.dart';
@@ -26,63 +25,59 @@ import 'core/menu_store.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
+  debugPrint(">>> [MAIN] BOOTING...");
+
   // 1. CRITICAL: Initialize core services before the app starts
   try {
-    // 🛡️ LOAD SESSION FIRST
-    await SupabaseConfig.loadSessionFromDisk();
+    // 🛡️ LOAD SESSION FIRST (Fast timeout)
+    await SupabaseConfig.loadSessionFromDisk().timeout(
+        const Duration(seconds: 3),
+        onTimeout: () => debugPrint(">>> [DISK] Timeout"));
 
+    // 🛡️ RESILIENT FIREBASE (Never blocks more than 4s)
     try {
-      // 🛡️ RESILIENT INITIALIZATION
-      // We use a timeout to prevent missing Google-Services config from hanging the app
-      await Firebase.initializeApp().timeout(const Duration(seconds: 5),
-          onTimeout: () {
-        debugPrint(
-            ">>> [FIREBASE] Initialization timed out. Skipping native sync.");
-        return Firebase.app();
-      });
+      await Firebase.initializeApp().timeout(const Duration(seconds: 4));
 
-      // 🛡️ Bypassing Robot Check (reCAPTCHA)
       if (kDebugMode) {
-        try {
-          await fb.FirebaseAuth.instance
-              .setSettings(appVerificationDisabledForTesting: false);
-        } catch (e) {
-          debugPrint(">>> [AUTH] Warning: $e");
-        }
+        await fb.FirebaseAuth.instance
+            .setSettings(appVerificationDisabledForTesting: false);
       }
 
-      // 🛡️ APP CHECK
-      try {
-        await FirebaseAppCheck.instance
-            .activate(
-              androidProvider: kDebugMode
-                  ? AndroidProvider.debug
-                  : AndroidProvider.playIntegrity,
-              appleProvider: AppleProvider.deviceCheck,
-            )
-            .timeout(const Duration(seconds: 3));
-      } catch (e) {
-        debugPrint(">>> [APP CHECK] Skipping: $e");
-      }
-
-      await SupabaseConfig.initialize();
+      await FirebaseAppCheck.instance
+          .activate(
+            androidProvider: kDebugMode
+                ? AndroidProvider.debug
+                : AndroidProvider.playIntegrity,
+            appleProvider: AppleProvider.deviceCheck,
+          )
+          .timeout(const Duration(seconds: 2));
     } catch (e) {
-      debugPrint("FIREBASE/SUPABASE INIT ERROR (Handled): $e");
+      debugPrint(">>> [FIREBASE] Skipping: $e");
     }
+
+    // 🛡️ SUPABASE (Fast timeout)
+    await SupabaseConfig.initialize().timeout(const Duration(seconds: 3),
+        onTimeout: () => debugPrint(">>> [SUPABASE] Timeout"));
   } catch (e) {
     debugPrint("CRITICAL BOOT ERROR: $e");
   }
 
-  // 2. Load persistence
-  await GlobalCart().load();
-  await LocationService.loadLocationFromDisk();
-  await LocationStore().loadFromDisk();
-  await OrderStore().loadFromDisk();
-  await MenuStore().loadFromDisk();
-  await FavoriteStore.loadLocal();
+  // 2. Load persistence (parallel)
+  await Future.wait([
+    GlobalCart().load(),
+    LocationService.loadLocationFromDisk(),
+    LocationStore().loadFromDisk(),
+    OrderStore().loadFromDisk(),
+    MenuStore().loadFromDisk(),
+    FavoriteStore.loadLocal(),
+  ]).timeout(const Duration(seconds: 3), onTimeout: () => []);
 
-  // 3. 🔔 Pre-initialize notification plugin
-  NotificationService.ensureNotificationsReady();
+  // 3. 🔔 Notifications (Safety first)
+  try {
+    NotificationService.ensureNotificationsReady();
+  } catch (e) {
+    debugPrint(">>> [NOTIF] Pre-init error: $e");
+  }
 
   runApp(const CustomerApp());
 }
@@ -126,6 +121,8 @@ class RootDecision extends StatefulWidget {
 }
 
 class _RootDecisionState extends State<RootDecision> {
+  bool _navigated = false;
+
   @override
   void initState() {
     super.initState();
@@ -133,29 +130,50 @@ class _RootDecisionState extends State<RootDecision> {
   }
 
   Future<void> _bootstrap() async {
-    debugPrint(">>> [RAPID BOOT] START");
+    debugPrint(">>> [ROOT] STARTING BOOTSTRAP...");
 
-    final String? userId = SupabaseConfig.forcedUserId;
-    debugPrint(">>> [RAPID BOOT] FINAL SESSION CHECK: $userId");
-
-    if (mounted) {
-      if (userId != null && userId.isNotEmpty) {
-        try {
-          await NotificationService.initialize(context)
-              .timeout(const Duration(seconds: 5));
-        } catch (e) {
-          debugPrint(">>> [NOTIF] Initialization skipped: $e");
-        }
-
-        SupabaseConfig.bootstrap();
-        _safeNavigate('/home');
-      } else {
-        _safeNavigate('/login');
+    // 🛡️ EMERGENCY KILL-SWITCH: Force navigation to login if stuck for 5 seconds
+    Future.delayed(const Duration(seconds: 5), () {
+      if (mounted && !_navigated) {
+        debugPrint(
+            ">>> [ROOT] EMERGENCY KILL-SWITCH TRIGGERED. GOING TO LOGIN.");
+        _forceGoToLogin();
       }
+    });
+
+    try {
+      final String? userId = SupabaseConfig.forcedUserId;
+      debugPrint(">>> [ROOT] SESSION CHECK: $userId");
+
+      if (mounted) {
+        if (userId != null && userId.isNotEmpty) {
+          try {
+            await NotificationService.initialize(context)
+                .timeout(const Duration(seconds: 4));
+          } catch (e) {
+            debugPrint(">>> [NOTIF] Skipped: $e");
+          }
+          SupabaseConfig.bootstrap();
+          _safeNavigate('/home');
+        } else {
+          _safeNavigate('/login');
+        }
+      }
+    } catch (e) {
+      debugPrint(">>> [ROOT] BOOTSTRAP ERROR: $e");
+      _forceGoToLogin();
     }
   }
 
+  void _forceGoToLogin() {
+    if (_navigated) return;
+    _navigated = true;
+    _safeNavigate('/login');
+  }
+
   void _safeNavigate(String route, {Object? args}) {
+    if (_navigated && route != '/home') return; // Prevent double nav
+    _navigated = true;
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
         Navigator.of(context).pushReplacementNamed(route, arguments: args);
